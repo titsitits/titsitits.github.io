@@ -27,7 +27,7 @@
 <span class="c1 c4">Un réseau de neurones profond est un algorithme qui permet de prédire une variable dépendante à partir de plusieurs variables prédictives. L’exemple le plus couramment utilisé pour expliquer cette notion de modèle prédictif est celui du prix des maisons. A partir d’un ensemble d’exemples de maisons (appelé jeu d’entraînement), dont on connaît le prix, ainsi que différentes variables telles que la surface, le nombre de pièces, l’âge, etc., on estime une fonction qui va caractériser le prix en fonction des autres variables connues:</span>
 
 <span class="c1 c4"></span>
-<span align="center>
+<span align="center">
 ![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png)</span>
 
 <span class="c1 c4"></span>
