@@ -62,7 +62,7 @@
 
 <span class="c1 c4">Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire une image de meilleure qualité (plus réaliste, et ayant plus de pixels) à partir d’une image d’entrée plus petite (voir Figure 2) :</span>
 
-![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image2.png)
+![]("https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image2.png")
 
 <span class="c1 c4"></span>
 
