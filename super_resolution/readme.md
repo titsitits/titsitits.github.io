@@ -1,6 +1,6 @@
-# <p align="center">White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ?</p>
+<p align="center"> # White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ?</p>
 
-### <p align="center">Un notebook self-contained pour tester différents algorithmes de Deep Learning</p>
+<p align="center"> ### Un notebook self-contained pour tester différents algorithmes de Deep Learning</p>
 
 <span>Mickaël Tits - CETIC asbl -</span> <span class="c14">[https://www.cetic.be/Mickael-Tits?lang=fr](https://www.google.com/url?q=https://www.cetic.be/Mickael-Tits?lang%3Dfr&sa=D&ust=1566390330216000)</span><span> - 03/07/2019</span>
 
