@@ -28,7 +28,7 @@
 
 <span class="c1 c4"></span>
 
-![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image1.png)
+![im](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image1.png)
 
 <span class="c1 c4"></span>
 
