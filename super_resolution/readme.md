@@ -2,7 +2,7 @@
 
 ### <p align="center">Un notebook self-contained pour tester différents algorithmes de Deep Learning</p>
 
-<span>Mickaël Tits - CETIC asbl -</span> <span class="c14">[https://www.cetic.be/Mickael-Tits?lang=fr](https://www.google.com/url?q=https://www.cetic.be/Mickael-Tits?lang%3Dfr&sa=D&ust=1566390330216000)</span><span> - 03/07/2019</span>
+<p align="center"><span>Mickaël Tits - CETIC asbl -</span> <span class="c14">[https://www.cetic.be/Mickael-Tits?lang=fr](https://www.google.com/url?q=https://www.cetic.be/Mickael-Tits?lang%3Dfr&sa=D&ust=1566390330216000)</span><span> - 03/07/2019</span></p>
 
 <span class="c1 c4"></span>
 
@@ -28,7 +28,9 @@
 
 <span class="c1 c4"></span>
 
+<p align="center">
 ![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png)
+ </p>
 
 <span class="c1 c4"></span>
 
@@ -36,7 +38,9 @@
 
 <span class="c1 c4"></span>
 
+<p align="center">
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 540.96px; height: 323.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png)</span>
+</p>
 
 <span>Figure 1\. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.</span><sup>[[2]](#ftnt2)</sup>
 
@@ -151,15 +155,19 @@
 
 <span class="c1 c4"></span>
 
+<p align="center">
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.61px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.69px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png)</span>
 
 <span class="c1 c4">Figure 4\. Exemple de super-résolution d’image, obtenu avec ESRGAN.</span>
+</p>
 
 <span class="c1 c4"></span>
 
+<p align="center">
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 241.33px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image7.png)</span>
 
 <span>Figure 5\. Etat de l’art recensé sur paperswithcode.com (résupéré le 03/07/2019 -</span> <span class="c14">[https://paperswithcode.com/task/image-super-resolution](https://www.google.com/url?q=https://paperswithcode.com/task/image-super-resolution&sa=D&ust=1566390330241000)</span><span class="c1 c4">). SRGAN + Residual-in-Rseidual Dense Block (ESRGAN) se retrouve à la première place sur la plupart des benchmarks.</span>
+</p>
 
 <span class="c1 c4"></span>
 
@@ -167,12 +175,13 @@
 
 <span class="c1 c4"></span>
 
+<p align="center">
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 283.50px; height: 203.87px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.50px; height: 203.77px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png)</span>
 
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 287.00px; height: 249.74px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 287.87px; height: 250.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png)</span>
 
 <span>Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.</span><sup>[[10]](#ftnt10)</sup><span class="c1 c4"> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.</span>
-
+</p>
 <span class="c1 c4"></span>
 
 # <span class="c4 c12 c21">Verdict</span>
