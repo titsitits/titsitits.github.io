@@ -1,6 +1,10 @@
 ## Welcome to my page
 
-# Github repositories
+### Pages
+
+[Image restoration](titsitits.github.io/open-image-restoration)
+
+### Personal github repositories
 
 [A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](https://github.com/titsitits/open-image-restoration)
 
