@@ -2,7 +2,7 @@
 
 ### Pages
 
-[Image restoration](titsitits.github.io/open-image-restoration)
+[Image restoration](http://titsitits.github.io/open-image-restoration)
 
 ### Personal github repositories
 
