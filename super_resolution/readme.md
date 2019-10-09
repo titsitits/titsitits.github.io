@@ -28,7 +28,7 @@
 
 <span class="c1 c4"></span>
 
-![im](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image1.png)
+![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png)
 
 <span class="c1 c4"></span>
 
@@ -36,7 +36,7 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 540.96px; height: 323.50px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image3.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 540.96px; height: 323.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png)</span>
 
 <span>Figure 1\. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.</span><sup>[[2]](#ftnt2)</sup>
 
@@ -54,7 +54,7 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 546.00px; height: 365.75px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image10.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 546.00px; height: 365.75px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png)</span>
 
 <span>Figure 2\. Extrait des experts à Miami.</span> <span class="c14">[https://www.youtube.com/watch?v=IRBo5ZGcyVA](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DIRBo5ZGcyVA&sa=D&ust=1566390330224000)</span>
 
@@ -62,7 +62,7 @@
 
 <span class="c1 c4">Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire une image de meilleure qualité (plus réaliste, et ayant plus de pixels) à partir d’une image d’entrée plus petite (voir Figure 2) :</span>
 
-![]("https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image2.png")
+![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image2.png)
 
 <span class="c1 c4"></span>
 
@@ -74,7 +74,7 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 366.50px; height: 250.83px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image5.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 366.50px; height: 250.83px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png)</span>
 
 <span class="c1 c4">Figure 2\. Super-résolution d’image par apprentissage profond - principe de base. L’algorithme est entraîné à générer, à partir d’une image de taille artificiellement réduite, une image de plus grande résolution la plus proche possible de l’image originale.</span>
 
@@ -86,7 +86,7 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 250.67px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image13.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 250.67px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image13.png)</span>
 
 <span class="c1 c4">Figure 3\. Réseaux antagonistes génératifs (Generative Adversarial Networks - GAN). Le générateur est entraîné à générer une image de grande taille la plus réaliste possible à partir de l’image d’entrée (de petite taille), alors que le discriminateur est entraîné à différencier une image réelle d’une image synthétisée par le générateur. Le premier a donc comme objectif de maximiser l’erreur du deuxième.</span>
 
@@ -151,13 +151,13 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.61px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image4.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.69px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image8.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.61px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.69px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png)</span>
 
 <span class="c1 c4">Figure 4\. Exemple de super-résolution d’image, obtenu avec ESRGAN.</span>
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 241.33px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image7.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 241.33px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image7.png)</span>
 
 <span>Figure 5\. Etat de l’art recensé sur paperswithcode.com (résupéré le 03/07/2019 -</span> <span class="c14">[https://paperswithcode.com/task/image-super-resolution](https://www.google.com/url?q=https://paperswithcode.com/task/image-super-resolution&sa=D&ust=1566390330241000)</span><span class="c1 c4">). SRGAN + Residual-in-Rseidual Dense Block (ESRGAN) se retrouve à la première place sur la plupart des benchmarks.</span>
 
@@ -167,9 +167,9 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 283.50px; height: 203.87px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image11.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.50px; height: 203.77px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image9.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 283.50px; height: 203.87px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.50px; height: 203.77px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png)</span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 287.00px; height: 249.74px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image6.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 287.87px; height: 250.50px;">![](https://titsitits.github.io/open-image-restoration/White paper - super-resolution (french)/Whitepapersuperresolution_fichiers/image12.png)</span>
+<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 287.00px; height: 249.74px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 287.87px; height: 250.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png)</span>
 
 <span>Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.</span><sup>[[10]](#ftnt10)</sup><span class="c1 c4"> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.</span>
 
