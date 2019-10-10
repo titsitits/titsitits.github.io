@@ -2,7 +2,10 @@
 
 ### Pages
 
-[Image restoration](http://titsitits.github.io/open-image-restoration)
+[Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
+
+[Open-image-restoration: A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](http://titsitits.github.io/open-image-restoration)
+
 
 ### Personal github repositories
 
