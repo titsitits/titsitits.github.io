@@ -1,24 +1,18 @@
-<p align="center"> # White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ?</p>
+# White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ?
 
-<p align="center"> ### Un notebook self-contained pour tester différents algorithmes de Deep Learning</p>
+### Un notebook self-contained pour tester différents algorithmes de Deep Learning
 
 <span>Mickaël Tits - CETIC asbl -</span> <span class="c14">[https://www.cetic.be/Mickael-Tits?lang=fr](https://www.google.com/url?q=https://www.cetic.be/Mickael-Tits?lang%3Dfr&sa=D&ust=1566390330216000)</span><span> - 03/07/2019</span>
 
-<span class="c1 c4"></span>
 
-<span class="c1 c4"></span>
-
-<span class="c1 c4"></span>
 
 <span>Suite au succès de notre premier article de blog sur le Deep Learning, dans un contexte artistique (</span> <span class="c14">[https://www.cetic.be/Deep-Learning-et-styles-artistiques](https://www.google.com/url?q=https://www.cetic.be/Deep-Learning-et-styles-artistiques&sa=D&ust=1566390330218000)</span><span>), nous avons décidé de diffuser une série d’articles pour mieux faire connaître les applications du Deep Learning dans le traitement multimédia à un large public en francophonie, et plus particulièrement en Wallonie. En parallèle, La</span> <span class="c14">[Deep Learning Academy](https://www.google.com/url?q=https://www.linkedin.com/groups/8614751/&sa=D&ust=1566390330218000)</span><span class="c1 c4">, lancée conjointement par UCLouvain et UMONS, et récemment rejointe par le CETIC, a entamé une initiative pour le test et la diffusion d’outils technologiques utilisant du Deep Learning, regroupés actuellement sous le lien suivant:</span>
 
 <span class="c14">[https://deep-learning-academy.github.io/](https://www.google.com/url?q=https://deep-learning-academy.github.io/&sa=D&ust=1566390330219000)</span><span class="c1 c4"> </span>
 
-<span class="c1 c4"></span>
 
 <span>C’est donc dans cette démarche commune que nous proposons un premier article blanc, accompagné d’un</span> <span class="c14">[notebook colab](https://www.google.com/url?q=https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb&sa=D&ust=1566390330219000)</span><span class="c1 c4"> de démonstration, sur la super-résolution d’images.</span>
 
-<span class="c1 c4"></span>
 
 <span class="c1 c4">Dans cet article, nous parlerons plus particulièrement d’un ensemble techniques permettant d’améliorer la qualité d’une image grâce à une augmentation artificielle des pixels. Ces techniques s’appellent couramment “super-résolution” d’image. Les méthodes les plus performantes aujourd’hui sont toutes basées sur les réseaux de neurones profonds (Deep Neural Networks - DNN).</span>
 
@@ -27,20 +21,18 @@
 <span class="c1 c4">Un réseau de neurones profond est un algorithme qui permet de prédire une variable dépendante à partir de plusieurs variables prédictives. L’exemple le plus couramment utilisé pour expliquer cette notion de modèle prédictif est celui du prix des maisons. A partir d’un ensemble d’exemples de maisons (appelé jeu d’entraînement), dont on connaît le prix, ainsi que différentes variables telles que la surface, le nombre de pièces, l’âge, etc., on estime une fonction qui va caractériser le prix en fonction des autres variables connues:</span>
 
 <span class="c1 c4"></span>
-<span align="center">
-![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png)</span>
+
+![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png)
 
 <span class="c1 c4"></span>
 
 <span>L’architecture d’un réseau de neurones permet de définir une fonction plus ou moins complexe, avec des paramètres (les poids des liens entre les neurones) qui vont devoir être choisis de manière à estimer au mieux cette fonction. Ce choix des paramètres se fait de manière à ce que la fonction donne un résultat le plus proche possible du prix réel pour toutes les maisons du jeu d’entraînement. Ce processus est effectué par un processus d’optimisation, et plus particulièrement d’une minimisation de l’erreur des prédictions sur toutes les maisons du jeu d’entraînement (appelée fonction de coût)</span> <span class="c28">(c’est-à-dire une minimisation de l’écart entre leur prix réel et le prix prédit à partir de leur surface et de leur âge par la fonction estimée)</span><span>. Cette optimisation se base généralement sur l’algorithme de descente de gradient</span> <sup>[[1]](#ftnt1)</sup><span class="c1 c4">. Cet algorithme permet de calculer la modification des paramètres (les poids des liens entre les neurones) qui va permettre de faire baisser le plus l’erreur de prédiction. Ce processus est appliqué de manière itérative par petits pas jusqu’à atteindre un minimum de l’erreur de prédiction sur toutes les maisons d’entraînement. En général, on teste ensuite la fonction obtenue (le réseau de neurone avec ses paramètres bien choisis) sur un nouvel ensemble de maisons qui n’ont pas été utilisées pour l’entraînement, pour vérifier si la fonction permet de réellement estimer le prix des maisons, et n’a pas juste retenu par coeur le prix des maisons du jeu d’entraînement. On parle de phase de test.</span>
 
-<span class="c1 c4"></span>
 
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 540.96px; height: 323.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png)</span>
 
 <span>Figure 1\. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.</span><sup>[[2]](#ftnt2)</sup>
 
-<span class="c1 c4"></span>
 
 <span>Ce concept général d’entraînement automatique d’un algorithme à partir d’exemples et de la minimisation d’une fonction de coût est le fondement du machine learning, une branche importante de l’intelligence artificielle. Le Deep Learning est une sous-branche particulière du machine learning, basée sur un type spécifique d’algorithmes, à savoir les réseaux de neurones. Les réseaux de neurones sont une famille d’algorithmes permettant d’estimer des fonctions extrêmement complexes, et sont appelés ainsi car ils sont inspirés par la manière dont fonctionne le cerveau (voir Figure 1). En effet, l’apprentissage au niveau du cerveau se fait par un réarrangement perpétuel des connexions (les synapses) entre un grand nombre de petites unités appelés neurones, permettant à un animal d’apprendre progressivement n’importe quelle tâche grâce des exemples et de l’entraînement, permettant ainsi de reconnaître un chat ou chien, de comprendre des mots, d’apprendre à marcher, etc. Ce phénomène est communément connu sous le nom de plasticité cérébrale</span><sup>[[3]](#ftnt3)</sup><span class="c1 c4">.</span>
 
