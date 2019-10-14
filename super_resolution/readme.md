@@ -2,7 +2,7 @@
 
 ### Un notebook self-contained pour tester différents algorithmes de Deep Learning
 
-<p>Mickaël Tits - CETIC asbl -[https://www.cetic.be/Mickael-Tits?lang=fr](https://www.google.com/url?q=https://www.cetic.be/Mickael-Tits?lang%3Dfr&sa=D&ust=1566390330216000) - 03/07/2019</p>
+<p>Mickaël Tits - CETIC asbl - https://www.cetic.be/Mickael-Tits?lang=fr - 03/07/2019</p>
 
 
 
