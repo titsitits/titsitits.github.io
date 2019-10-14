@@ -164,7 +164,8 @@
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" width="400" />  
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" width="400" />
 
-<span>Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.</span><sup>[[10]](#ftnt10)</sup><span class="c1 c4"> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.</span>
+Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.<sup>[[10]](#ftnt10)</sup>
+L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.
 </p>
 
 <span class="c1 c4"></span>
