@@ -154,18 +154,15 @@
 
 <span>Figure 5\. Etat de l’art recensé sur paperswithcode.com (résupéré le 03/07/2019 -</span> <span class="c14">[https://paperswithcode.com/task/image-super-resolution](https://www.google.com/url?q=https://paperswithcode.com/task/image-super-resolution&sa=D&ust=1566390330241000)</span><span class="c1 c4">). SRGAN + Residual-in-Rseidual Dense Block (ESRGAN) se retrouve à la première place sur la plupart des benchmarks.</span>
 
-<span class="c1 c4"></span>
 
 <span>A l’inverse, de nombreux exemples moins concluants ont été obtenus avec chaque algorithmes, comme on peut le voir à la Figure 6\. L’ensemble des résultats peut être vu (ou regénéré) à partir du</span> <span class="c14">[notebook colab](https://www.google.com/url?q=https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb&sa=D&ust=1566390330242000)</span><span class="c1 c4"> fourni avec cet article.</span>
 
-<span class="c1 c4"></span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 283.50px; height: 203.87px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.50px; height: 203.77px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png)</span>
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" width="800" />
-  
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" width="800" />
+ <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png" width="400" />  
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png" width="400" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" width="400" />  
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" width="400" />
 
 <span>Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.</span><sup>[[10]](#ftnt10)</sup><span class="c1 c4"> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.</span>
 </p>
