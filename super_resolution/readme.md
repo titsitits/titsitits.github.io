@@ -18,7 +18,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 <span class="c1 c4">Un réseau de neurones profond est un algorithme qui permet de prédire une variable dépendante à partir de plusieurs variables prédictives. L’exemple le plus couramment utilisé pour expliquer cette notion de modèle prédictif est celui du prix des maisons. A partir d’un ensemble d’exemples de maisons (appelé jeu d’entraînement), dont on connaît le prix, ainsi que différentes variables telles que la surface, le nombre de pièces, l’âge, etc., on estime une fonction qui va caractériser le prix en fonction des autres variables connues:</span>
 
 
-<p align="center>
+<p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png" width="800" />
 </p>
 
@@ -26,7 +26,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 <span>L’architecture d’un réseau de neurones permet de définir une fonction plus ou moins complexe, avec des paramètres (les poids des liens entre les neurones) qui vont devoir être choisis de manière à estimer au mieux cette fonction. Ce choix des paramètres se fait de manière à ce que la fonction donne un résultat le plus proche possible du prix réel pour toutes les maisons du jeu d’entraînement. Ce processus est effectué par un processus d’optimisation, et plus particulièrement d’une minimisation de l’erreur des prédictions sur toutes les maisons du jeu d’entraînement (appelée fonction de coût)</span> <span class="c28">(c’est-à-dire une minimisation de l’écart entre leur prix réel et le prix prédit à partir de leur surface et de leur âge par la fonction estimée)</span><span>. Cette optimisation se base généralement sur l’algorithme de descente de gradient</span> <sup>[[1]](#ftnt1)</sup><span class="c1 c4">. Cet algorithme permet de calculer la modification des paramètres (les poids des liens entre les neurones) qui va permettre de faire baisser le plus l’erreur de prédiction. Ce processus est appliqué de manière itérative par petits pas jusqu’à atteindre un minimum de l’erreur de prédiction sur toutes les maisons d’entraînement. En général, on teste ensuite la fonction obtenue (le réseau de neurone avec ses paramètres bien choisis) sur un nouvel ensemble de maisons qui n’ont pas été utilisées pour l’entraînement, pour vérifier si la fonction permet de réellement estimer le prix des maisons, et n’a pas juste retenu par coeur le prix des maisons du jeu d’entraînement. On parle de phase de test.</span>
 
 
-<p align="center>
+<p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png" width="800" />
 </p>
 
@@ -47,7 +47,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 <span class="c1 c4"></span>
 
 
-<p align="center>
+<p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png" width="800" />
 </p>
 
@@ -56,7 +56,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 <span class="c1 c4">Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire une image de meilleure qualité (plus réaliste, et ayant plus de pixels) à partir d’une image d’entrée plus petite (voir Figure 2) :</span>
 
 
-<p align="center>
+<p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image2.png" width="800" />
 </p>
 
@@ -70,7 +70,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 <span class="c1 c4"></span>
 
 
-<p align="center>
+<p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" width="800" />
 </p>
 
@@ -81,7 +81,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 Ces dernières années, de nouveaux travaux sur cette thématique sont régulièrement proposés, afin d’améliorer les techniques de super-résolution d’images. Ces améliorations se basent fréquemment sur la proposition d’une meilleure architecture de réseau de neurone (c’est-à-dire un modèle plus adapté à la fonction à estimer, i.e. la super-résolution d’image dans ce contexte), sur des jeux de données plus larges, plus adaptés, ou encore sur une manière plus pertinente d’évaluer la qualité d’une image reconstruite. Pour comparer les dernières avancées dans l’état de l’art, des benchmarks basés sur ces mesures et sur un ensemble d’images dédiées sont utilisés. Par exemple, on trouve ici un classement de différents travaux, mesurés en PSNR et en SSIM, sur un ensemble de 14 images de référence:  https://paperswithcode.com/sota/image-super-resolution-on-set14-4x-upscaling
 
 
-<p align="center>
+<p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image13.png" width="800" />
 </p>
 
