@@ -162,11 +162,13 @@
 
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 283.50px; height: 203.87px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.50px; height: 203.77px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png)</span>
 
+<p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" width="800" />
-
+  
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" width="800" />
 
-<p>Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.</p><sup>[[10]](#ftnt10)</sup><span class="c1 c4"> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.</span>
+<span>Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.</span><sup>[[10]](#ftnt10)</sup><span class="c1 c4"> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.</span>
+</p>
 
 <span class="c1 c4"></span>
 
