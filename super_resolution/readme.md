@@ -1,35 +1,35 @@
-# White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ?
+<h1>  White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ? </h1>
 
-### Un notebook self-contained pour tester différents algorithmes de Deep Learning
+<h3> Un notebook self-contained pour tester différents algorithmes de Deep Learning </h3>
 
 <p>Mickaël Tits - CETIC asbl - https://www.cetic.be/Mickael-Tits?lang=fr - 03/07/2019</p>
 
 
-
-<span  align="justify">Suite au succès de notre premier article de blog sur le Deep Learning, dans un contexte artistique (</span> <span class="c14">[https://www.cetic.be/Deep-Learning-et-styles-artistiques](https://www.google.com/url?q=https://www.cetic.be/Deep-Learning-et-styles-artistiques&sa=D&ust=1566390330218000)</span><span>), nous avons décidé de diffuser une série d’articles pour mieux faire connaître les applications du Deep Learning dans le traitement multimédia à un large public en francophonie, et plus particulièrement en Wallonie. En parallèle, La</span> <span class="c14">[Deep Learning Academy](https://www.google.com/url?q=https://www.linkedin.com/groups/8614751/&sa=D&ust=1566390330218000)</span><span class="c1 c4">, lancée conjointement par UCLouvain et UMONS, et récemment rejointe par le CETIC, a entamé une initiative pour le test et la diffusion d’outils technologiques utilisant du Deep Learning, regroupés actuellement sous le lien suivant:</span>
-
-<span class="c14">[https://deep-learning-academy.github.io/](https://www.google.com/url?q=https://deep-learning-academy.github.io/&sa=D&ust=1566390330219000)</span><span class="c1 c4"> </span>
+Suite au succès de notre premier article de blog sur le Deep Learning, dans un contexte artistique (https://www.cetic.be/Deep-Learning-et-styles-artistiques), nous avons décidé de diffuser une série d’articles pour mieux faire connaître les applications du Deep Learning dans le traitement multimédia à un large public en francophonie, et plus particulièrement en Wallonie. En parallèle, La [Deep Learning Academy](https://www.linkedin.com/groups/8614751/&sa=D&ust=1566390330218000), lancée conjointement par UCLouvain et UMONS, et récemment rejointe par le CETIC, a entamé une initiative pour le test et la diffusion d’outils technologiques utilisant du Deep Learning, regroupés actuellement sous le lien suivant: https://deep-learning-academy.github.io/
 
 
-<p align="justify">C’est donc dans cette démarche commune que nous proposons un premier article blanc, accompagné d’un</span> <span class="c14">[notebook colab](https://www.google.com/url?q=https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb&sa=D&ust=1566390330219000)</span><span class="c1 c4"> de démonstration, sur la super-résolution d’images.</p>
+<p align="justify">C’est donc dans cette démarche commune que nous proposons un premier article blanc, accompagné d’un [notebook colab](https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb) de démonstration, sur la super-résolution d’images.</p>
 
 
-<span class="c1 c4">Dans cet article, nous parlerons plus particulièrement d’un ensemble techniques permettant d’améliorer la qualité d’une image grâce à une augmentation artificielle des pixels. Ces techniques s’appellent couramment “super-résolution” d’image. Les méthodes les plus performantes aujourd’hui sont toutes basées sur les réseaux de neurones profonds (Deep Neural Networks - DNN).</span>
+Dans cet article, nous parlerons plus particulièrement d’un ensemble techniques permettant d’améliorer la qualité d’une image grâce à une augmentation artificielle des pixels. Ces techniques s’appellent couramment “super-résolution” d’image. Les méthodes les plus performantes aujourd’hui sont toutes basées sur les réseaux de neurones profonds (Deep Neural Networks - DNN).
 
-# <span class="c4 c12 c21">Un peu de théorie sur le Deep Learning</span>
+<h2> Un peu de théorie sur le Deep Learning</h2>
 
 <span class="c1 c4">Un réseau de neurones profond est un algorithme qui permet de prédire une variable dépendante à partir de plusieurs variables prédictives. L’exemple le plus couramment utilisé pour expliquer cette notion de modèle prédictif est celui du prix des maisons. A partir d’un ensemble d’exemples de maisons (appelé jeu d’entraînement), dont on connaît le prix, ainsi que différentes variables telles que la surface, le nombre de pièces, l’âge, etc., on estime une fonction qui va caractériser le prix en fonction des autres variables connues:</span>
 
-<span class="c1 c4"></span>
 
-![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png)
+<p align="center>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png" width="800" />
+</p>
 
-<span class="c1 c4"></span>
 
 <span>L’architecture d’un réseau de neurones permet de définir une fonction plus ou moins complexe, avec des paramètres (les poids des liens entre les neurones) qui vont devoir être choisis de manière à estimer au mieux cette fonction. Ce choix des paramètres se fait de manière à ce que la fonction donne un résultat le plus proche possible du prix réel pour toutes les maisons du jeu d’entraînement. Ce processus est effectué par un processus d’optimisation, et plus particulièrement d’une minimisation de l’erreur des prédictions sur toutes les maisons du jeu d’entraînement (appelée fonction de coût)</span> <span class="c28">(c’est-à-dire une minimisation de l’écart entre leur prix réel et le prix prédit à partir de leur surface et de leur âge par la fonction estimée)</span><span>. Cette optimisation se base généralement sur l’algorithme de descente de gradient</span> <sup>[[1]](#ftnt1)</sup><span class="c1 c4">. Cet algorithme permet de calculer la modification des paramètres (les poids des liens entre les neurones) qui va permettre de faire baisser le plus l’erreur de prédiction. Ce processus est appliqué de manière itérative par petits pas jusqu’à atteindre un minimum de l’erreur de prédiction sur toutes les maisons d’entraînement. En général, on teste ensuite la fonction obtenue (le réseau de neurone avec ses paramètres bien choisis) sur un nouvel ensemble de maisons qui n’ont pas été utilisées pour l’entraînement, pour vérifier si la fonction permet de réellement estimer le prix des maisons, et n’a pas juste retenu par coeur le prix des maisons du jeu d’entraînement. On parle de phase de test.</span>
 
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 540.96px; height: 323.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png)</span>
+<p align="center>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png" width="800" />
+</p>
+
 
 <span>Figure 1\. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.</span><sup>[[2]](#ftnt2)</sup>
 
@@ -46,17 +46,20 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 546.00px; height: 365.75px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png)</span>
+
+<p align="center>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png" width="800" />
+</p>
 
 <span>Figure 2\. Extrait des experts à Miami.</span> <span class="c14">[https://www.youtube.com/watch?v=IRBo5ZGcyVA](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DIRBo5ZGcyVA&sa=D&ust=1566390330224000)</span>
 
-<span class="c1 c4"></span>
-
 <span class="c1 c4">Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire une image de meilleure qualité (plus réaliste, et ayant plus de pixels) à partir d’une image d’entrée plus petite (voir Figure 2) :</span>
 
-![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image2.png)
 
-<span class="c1 c4"></span>
+<p align="center>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image2.png" width="800" />
+</p>
+
 
 <span class="c1 c4">Pour réaliser cette tâche, le jeu d’entraînement consiste donc en un ensemble de paires d’images identiques mais de résolutions différentes. Ce jeu peut être obtenu soit en prenant deux photos identiques avec deux appareils photos différents, ou plus simplement en diminuant artificiellement la taille d’une image pour en extraire une version de plus basse résolution.</span>
 
@@ -66,19 +69,22 @@
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 366.50px; height: 250.83px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png)</span>
+
+<p align="center>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" width="800" />
+</p>
+
 
 <span class="c1 c4">Figure 2\. Super-résolution d’image par apprentissage profond - principe de base. L’algorithme est entraîné à générer, à partir d’une image de taille artificiellement réduite, une image de plus grande résolution la plus proche possible de l’image originale.</span>
 
-<span class="c1 c4"></span>
 
-<span class="c1 c4"></span>
+Ces dernières années, de nouveaux travaux sur cette thématique sont régulièrement proposés, afin d’améliorer les techniques de super-résolution d’images. Ces améliorations se basent fréquemment sur la proposition d’une meilleure architecture de réseau de neurone (c’est-à-dire un modèle plus adapté à la fonction à estimer, i.e. la super-résolution d’image dans ce contexte), sur des jeux de données plus larges, plus adaptés, ou encore sur une manière plus pertinente d’évaluer la qualité d’une image reconstruite. Pour comparer les dernières avancées dans l’état de l’art, des benchmarks basés sur ces mesures et sur un ensemble d’images dédiées sont utilisés. Par exemple, on trouve ici un classement de différents travaux, mesurés en PSNR et en SSIM, sur un ensemble de 14 images de référence:  https://paperswithcode.com/sota/image-super-resolution-on-set14-4x-upscaling
 
-<span>Ces dernières années, de nouveaux travaux sur cette thématique sont régulièrement proposés, afin d’améliorer les techniques de super-résolution d’images. Ces améliorations se basent fréquemment sur la proposition d’une meilleure architecture de réseau de neurone (c’est-à-dire un modèle plus adapté à la fonction à estimer, i.e. la super-résolution d’image dans ce contexte), sur des jeux de données plus larges, plus adaptés, ou encore sur une manière plus pertinente d’évaluer la qualité d’une image reconstruite. Pour comparer les dernières avancées dans l’état de l’art, des benchmarks basés sur ces mesures et sur un ensemble d’images dédiées sont utilisés. Par exemple, on trouve ici un classement de différents travaux, mesurés en PSNR et en SSIM, sur un ensemble de 14 images de référence:</span> <span class="c14">[https://paperswithcode.com/sota/image-super-resolution-on-set14-4x-upscaling](https://www.google.com/url?q=https://paperswithcode.com/sota/image-super-resolution-on-set14-4x-upscaling&sa=D&ust=1566390330228000)</span>
 
-<span class="c1 c4"></span>
+<p align="center>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image13.png" width="800" />
+</p>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 250.67px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image13.png)</span>
 
 <span class="c1 c4">Figure 3\. Réseaux antagonistes génératifs (Generative Adversarial Networks - GAN). Le générateur est entraîné à générer une image de grande taille la plus réaliste possible à partir de l’image d’entrée (de petite taille), alors que le discriminateur est entraîné à différencier une image réelle d’une image synthétisée par le générateur. Le premier a donc comme objectif de maximiser l’erreur du deuxième.</span>
 
@@ -98,9 +104,8 @@
 
 <span class="c1 c4">Dans cette jungle de méthodes et de mesures, il est difficile de se retrouver et de choisir la méthode qui convient le mieux aux images à traiter. C’est pourquoi le mieux est de tester par soi-même ces modèles et de les comparer sur ses propres images. Dans ce contexte, nous vous avons confectionné un tutoriel complet tenant dans un notebook unique sur Google Colab, et accessible sur le lien suivant:</span>
 
-<span class="c14">[https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb](https://www.google.com/url?q=https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb&sa=D&ust=1566390330234000)</span>
+https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb
 
-<span class="c1 c4"> </span>
 
 <span class="c1 c4">Google Colab est une plateforme gratuite permettant de faire tourner des algorithmes en python sur une machine hébergée chez Google, et surtout dotée d’une carte graphique (GPU) suffisamment puissance pour faire tourner des algorithmes de traitement d’image utilisant des modèles de Deep Learning (vous aurez en effet du mal à faire tourner ces programmes sur votre pc portable).</span>
 
@@ -141,12 +146,12 @@
 
 <span>L’amélioration la plus flagrante (de mon point de vue subjectif) a été obtenue sur un zoom sur un portrait, permettant notamment de reproduire une image d’oeil plutôt réaliste (voir Figure 4). On peut également remarquer que le contour des yeux, le sourcil et les cheveux semblent réalistes. Le meilleur résultat a été obtenu (selon moi) avec ESRGAN, qui se trouve être justement le premier dans plusieurs classement de méthodes sur le site</span> <span class="c14">[paperswithcode](https://www.google.com/url?q=https://paperswithcode.com/task/image-super-resolution&sa=D&ust=1566390330239000)</span><span> (voir Figure 5)</span><span class="c1 c4">.</span>
 
-<span class="c1 c4"></span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.61px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 248.69px; height: 231.50px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png)</span>
+<p align="center">
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" width="400" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" width="400" />
 
 <span class="c1 c4">Figure 4\. Exemple de super-résolution d’image, obtenu avec ESRGAN.</span>
-
+</p>
 
 <span class="c1 c4"></span>
 
