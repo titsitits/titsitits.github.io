@@ -19,7 +19,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png" width="800" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image1.png" width="250" />
 </p>
 
 
@@ -48,7 +48,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png" width="800" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png" width="600" />
 </p>
 
 <span>Figure 2\. Extrait des experts à Miami.</span> <span class="c14">[https://www.youtube.com/watch?v=IRBo5ZGcyVA](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DIRBo5ZGcyVA&sa=D&ust=1566390330224000)</span>
@@ -57,7 +57,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image2.png" width="800" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image2.png" width="250" />
 </p>
 
 
@@ -71,7 +71,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" width="800" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" width="700" />
 </p>
 
 
