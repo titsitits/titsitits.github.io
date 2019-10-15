@@ -6,11 +6,18 @@
 
 #### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
-
+<p align="center">
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" width="300" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" width="300" />
+</p>
 
 ### Projects
 
 #### [Open-image-restoration: A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](http://titsitits.github.io/open-image-restoration)
+
+<p align="center">
+<img src="https://github.com/titsitits/open-image-restoration/blob/master/Anne-Franck.png" width="600" />
+</p>
 
 This project gathers together and packages various image restoration techniques that follow various criteria:
 * State-of-the-art (they are all based on Deep Learning; as of today (25/07/2019 at time of writing), NLRN and ESRGAN are leaders in various leaderboards maintained by paperswithcode.com, see [here](https://paperswithcode.com/paper/non-local-recurrent-network-for-image) and [here](https://paperswithcode.com/paper/esrgan-enhanced-super-resolution-generative) ).
