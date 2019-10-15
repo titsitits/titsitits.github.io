@@ -170,8 +170,8 @@ https://colab.research.google.com/github/titsitits/Test_images_superresolution/b
 
 
 <p align="center">
- <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png" style="width: 40%; object-fit: contain" />  
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png" style="width: 40%; object-fit: contain" />
+ <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png" style="object-fit: contain" />  
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png" style="object-fit: contain" />
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" style="width: 40%; object-fit: contain" />  
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" style="width: 40%; object-fit: contain" />
 
