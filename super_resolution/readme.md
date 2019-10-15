@@ -52,7 +52,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png" width="600" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png" style="width: 80%; object-fit: contain" />
 </p>
 
 <span>Figure 2\. Extrait des experts à Miami.</span> <span class="c14">[https://www.youtube.com/watch?v=IRBo5ZGcyVA](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DIRBo5ZGcyVA&sa=D&ust=1566390330224000)</span>
@@ -75,7 +75,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" width="700" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" style="width: 80%; object-fit: contain" />
 </p>
 
 
@@ -86,7 +86,7 @@ Ces dernières années, de nouveaux travaux sur cette thématique sont réguliè
 
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image13.png" width="800" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image13.png" style="width: 100%; object-fit: contain" />
 </p>
 
 
@@ -151,15 +151,17 @@ https://colab.research.google.com/github/titsitits/Test_images_superresolution/b
 <span>L’amélioration la plus flagrante (de mon point de vue subjectif) a été obtenue sur un zoom sur un portrait, permettant notamment de reproduire une image d’oeil plutôt réaliste (voir Figure 4). On peut également remarquer que le contour des yeux, le sourcil et les cheveux semblent réalistes. Le meilleur résultat a été obtenu (selon moi) avec ESRGAN, qui se trouve être justement le premier dans plusieurs classement de méthodes sur le site</span> <span class="c14">[paperswithcode](https://www.google.com/url?q=https://paperswithcode.com/task/image-super-resolution&sa=D&ust=1566390330239000)</span><span> (voir Figure 5)</span><span class="c1 c4">.</span>
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" width="400" />
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" width="400" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 40%; object-fit: contain"/>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 40%; object-fit: contain" />
 
 <span class="c1 c4">Figure 4\. Exemple de super-résolution d’image, obtenu avec ESRGAN.</span>
 </p>
 
 <span class="c1 c4"></span>
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 241.33px;">![](https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image7.png)</span>
+<p align="center">
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image7.png" style="width: 100%; object-fit: contain"/>
+ </p>
 
 <span>Figure 5\. Etat de l’art recensé sur paperswithcode.com (résupéré le 03/07/2019 -</span> <span class="c14">[https://paperswithcode.com/task/image-super-resolution](https://www.google.com/url?q=https://paperswithcode.com/task/image-super-resolution&sa=D&ust=1566390330241000)</span><span class="c1 c4">). SRGAN + Residual-in-Rseidual Dense Block (ESRGAN) se retrouve à la première place sur la plupart des benchmarks.</span>
 
@@ -168,10 +170,10 @@ https://colab.research.google.com/github/titsitits/Test_images_superresolution/b
 
 
 <p align="center">
- <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png" width="400" />  
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png" width="400" />
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" width="400" />  
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" width="400" />
+ <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png" style="width: 40%; object-fit: contain" />  
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png" style="width: 40%; object-fit: contain" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" style="width: 40%; object-fit: contain" />  
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" style="width: 40%; object-fit: contain" />
 
 Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.<sup>[[10]](#ftnt10)</sup>
 L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.
