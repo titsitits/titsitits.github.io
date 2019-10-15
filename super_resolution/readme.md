@@ -5,8 +5,8 @@
 <p>Mickaël Tits - CETIC asbl - https://www.cetic.be/Mickael-Tits?lang=fr - 03/07/2019</p>
 
 <p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 40%; object-fit: contain" />
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 40%; object-fit: contain" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 100%; object-fit: contain" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 100%; object-fit: contain" />
 </p>
 
 Suite au succès de notre premier article de blog sur le Deep Learning, dans un contexte artistique (https://www.cetic.be/Deep-Learning-et-styles-artistiques), nous avons décidé de diffuser une série d’articles pour mieux faire connaître les applications du Deep Learning dans le traitement multimédia à un large public en francophonie, et plus particulièrement en Wallonie. En parallèle, La [Deep Learning Academy](https://www.linkedin.com/groups/8614751/&sa=D&ust=1566390330218000), lancée conjointement par UCLouvain et UMONS, et récemment rejointe par le CETIC, a entamé une initiative pour le test et la diffusion d’outils technologiques utilisant du Deep Learning, regroupés actuellement sous le lien suivant: https://deep-learning-academy.github.io/
