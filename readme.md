@@ -1,5 +1,12 @@
 # Welcome to my page
 
+<h2>{{ site.data.pages.docs_list_title }}</h2>
+<ul>
+   {% for item in site.data.pages.docs %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
+
 ## Pages
 
 ### Blogs
