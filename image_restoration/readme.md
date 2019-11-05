@@ -61,9 +61,13 @@ Pour terminer, bien que la qualité d'une image est un critère subjectif, des m
 
 
 
+### Un domaine en pleine expansion
+
+L'utilisation des réseaux de neurones profonds dans la recherche, et en particulier dans le traitement d'images est un champ de recherche particulièrement en mouvement actuellement. L'état de l'art évolue rapidement. A titre d'exemple, lors de la phase portant sur la comparaison d'algorithmes de super-résolution (voir [ici](https://titsitits.github.io/super_resolution/)), l'algorithme [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks (ECCV, 2018)](https://paperswithcode.com/paper/esrgan-enhanced-super-resolution-generative) était premier dans la plupart des classements de super-résolution. Ses performances semblent néanmoins avoir été surpassées depuis, par une autre algorithme: [Second-Order Attention Network for Single Image Super-Resolution (CVPR 2019)](https://paperswithcode.com/paper/second-order-attention-network-for-single).
 
 
 
+## Une sélection d'algorithmes libres de droits, utilisables, et compatibles
 
 Dans ce projet, nous avons tenté d'obtenir un compromis entre un pipeline de restauration d'images à la fois générique et efficace. Les techniques ont donc été sélectionnées de manière à fonctionner ensemble dans un même programme, et à donner un résultat  le plus robuste et générique possible.
 
