@@ -1,9 +1,9 @@
-# Welcome to my page
+# Welcome to my work - Mickaël Tits @ Cetic
 
 
 ## Pages
 
-### Blogs
+### Blog posts
 
 #### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
