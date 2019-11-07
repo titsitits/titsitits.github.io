@@ -65,7 +65,7 @@ Le classement comparant le plus grand nombre d'algorithmes est actuellement le "
 
 ![Jeu de données Set5](http://vllab.ucmerced.edu/wlai24/LapSRN/images/Set5.jpg)
 
-​                              Jeu de données de test Set5. (source: http://vllab.ucmerced.edu/wlai24/LapSRN/)
+​                              Jeu de données de test Set5. (source: [http://vllab.ucmerced.edu/wlai24/LapSRN/](http://vllab.ucmerced.edu/wlai24/LapSRN/) )
 
 ![image-20191105164930156](./image-20191105164930156.png)
 
@@ -87,11 +87,11 @@ Dans ce projet, nous avons tenté d'obtenir un compromis entre un pipeline de re
 
 Ainsi, pour chacune des quatre techniques évoquées plus haut, une analyse comparative de différents algorithmes a été réalisée.
 
-La plupart des algorithmes ont été identifiés par une recherche systématique sur le sitepaperswithcode.com](https://www.paperswithcode.com) dans les catégories respectives, ou directement sur le site [github.com](https://www.github.com), le site d'hébergement de référence de codes publics.
+La plupart des algorithmes ont été identifiés par une recherche systématique sur le site [paperswithcode.com](https://www.paperswithcode.com) dans les catégories respectives, ou directement sur le site [github.com](https://www.github.com), le site d'hébergement de référence de codes publics.
 
 ### Réduction de bruit gaussien
 
-De nombreux classements concernant la réduction de bruit sont accessibles sur: https://paperswithcode.com/task/image-denoising
+De nombreux classements concernant la réduction de bruit sont accessibles sur: [https://paperswithcode.com/task/image-denoising](https://paperswithcode.com/task/image-denoising)
 
 Ces classements se distinguent par les jeux d'images de test utilisés ( BSD ou Urban100), et par l'amplitude du bruit gaussien (représenté par sont écart-type *sigma*) simulé dans ces images, et réduit ensuite par les algorithmes. Le jeu d'images BSD contient des images de scènes naturelles assez variées [[1][1]], et semble plus générique que le Urban100, qui se limite à des paysages urbains, principalement des images d'immeubles aux profils très réguliers.
 
@@ -118,4 +118,3 @@ Si seul le critère de qualité du résultat est pris en compte, NLRN semble don
 # Références
 
 [1]:  Berkeley Segmentation Dataset :  Martin, D., Fowlkes, C., Tal, D., & Malik, J. (2001, July). A  database of human segmented natural images and its application to  evaluating segmentation algorithms and measuring ecological statistics.  Vancouver: Iccv. 
-
