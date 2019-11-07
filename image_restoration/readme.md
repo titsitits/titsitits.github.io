@@ -117,4 +117,5 @@ Si seul le critère de qualité du résultat est pris en compte, NLRN semble don
 
 # Références
 
-[1]:  Berkeley Segmentation Dataset :  Martin, D., Fowlkes, C., Tal, D., & Malik, J. (2001, July). A  database of human segmented natural images and its application to  evaluating segmentation algorithms and measuring ecological statistics.  Vancouver:: Iccv. 
+[1]:  Berkeley Segmentation Dataset :  Martin, D., Fowlkes, C., Tal, D., & Malik, J. (2001, July). A  database of human segmented natural images and its application to  evaluating segmentation algorithms and measuring ecological statistics.  Vancouver: Iccv. 
+
