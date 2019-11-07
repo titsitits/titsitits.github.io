@@ -6,6 +6,18 @@ Mickaël Tits - CETIC - 05/11/2019
 
 
 
+(ON-GOING WORK!)
+
+
+
+## Introduction
+
+contexte: Projet de recherche DigiMIR (multimedia information retrieval, avec numediart), intérêt marqué par l'organisation le Rif Tout Dju (club de photographie de Nivelles), et le journaliste/auteur Jean Vandendries.
+
+applications:  images historiques, caméras surveillance, récup images numérisées, images compressées sur le web, capteurs low-cost/smartphones, images médicales
+
+use case testé: Ouvrage de Jean Vandendries (en cours d'édition)
+
 ## Un pipeline de techniques de restauration d'image
 
 ### Des techniques diverses et variées
@@ -75,23 +87,33 @@ Dans ce projet, nous avons tenté d'obtenir un compromis entre un pipeline de re
 
 Ainsi, pour chacune des quatre techniques évoquées plus haut, une analyse comparative de différents algorithmes a été réalisée.
 
-La plupart des algorithmes ont été identifiés par une recherche systématique sur le sitepaperswithcode.com](https://paperswithcode.com) dans les catégories respectives, ou directement sur le site [github.com](https://github.com), le site d'hébergement de référence de codes publics.
+La plupart des algorithmes ont été identifiés par une recherche systématique sur le sitepaperswithcode.com](https://www.paperswithcode.com) dans les catégories respectives, ou directement sur le site [github.com](https://www.github.com), le site d'hébergement de référence de codes publics.
 
 ### Réduction de bruit gaussien
 
 De nombreux classements concernant la réduction de bruit sont accessibles sur: https://paperswithcode.com/task/image-denoising
 
-Ces classements se distinguent par les jeux d'images de test utilisés ( BSD [[1][1]] ou Urban100), et par l'amplitude du bruit gaussien (représenté par sont écart-type *sigma*) simulé dans ces images, et réduit ensuite par les algorithmes. Le jeu d'images BSD semble plus générique que le Urban100, qui se limite à des paysages urbains.
+Ces classements se distinguent par les jeux d'images de test utilisés ( BSD ou Urban100), et par l'amplitude du bruit gaussien (représenté par sont écart-type *sigma*) simulé dans ces images, et réduit ensuite par les algorithmes. Le jeu d'images BSD contient des images de scènes naturelles assez variées [[1][1]], et semble plus générique que le Urban100, qui se limite à des paysages urbains, principalement des images d'immeubles aux profils très réguliers.
 
+Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma50), [BSD68 sigma25](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma25) et [BSD68 sigma15](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma15) ont été retenus, car ils contiennent un plus large nombre d'algorithmes testés. Les deux derniers ont été testé sur des images avec une simulation de bruit plus "réaliste" (*sigma = 25* et *sigma = 15* respectivement), comme le montrent les exemples ci-dessous.
 
+![Noisy images comparison](noise.png)
 
-Pour chacune de ces techniques
+​                                  Différents bruit gaussiens simulés dans une image (source de l'image [ici](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg)).
 
-, à la comparaison de leurs diverses implémentations par différents algorithmes de Deep Learning, et plus particulièrement à la mise en série 
+Sur ces deux derniers classements, les seuls travaux proposant une licence libre de droits sont :
 
+1. [ NLRN - Non-Local Recurrent Network for Image Restoration (NeurIPS, 2018)](https://github.com/Ding-Liu/NLRN) - MIT
+<!-- 2. [N3Net - Neural Nearest Neighbors Networks (NeurIPS, 2018)](https://github.com/visinf/n3net) - licence ad-hoc, utilisation non-commerciale -->
+3. [DnCNN - Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising (TIP, 2017)](https://github.com/husqin/DnCNN-keras) - MIT (implémentation Keras uniquement)
 
+D'après les places occupées par ces deux méthodes dans le classement, NLRN devrait donner les meilleurs résultats. Bien que la comparaison visuelle soit tout à fait subjective, NLRN semble effectivement donner de meilleurs résultats pour l'image de test. DNCNN semble lisser l'image et enlever une partie de sa texture. Cela se remarque particulièrement sur le bureau en bois présent dans l'image, ainsi que sur les cheveux devenus flous.
 
+![Denoising comparison](denoising.png)
 
+​                                   Comparaison de méthodes de réduction de bruit (NLRN vs DNCNN)
+
+Si seul le critère de qualité du résultat est pris en compte, NLRN semble donc plus efficace. Malheureusement, d'un point de vue rapidité de calcul, le traitement a mis environ 4 secondes pour DNCNN, et 380 pour NLRN, pour une image d'une taille de petite taille (349x400 pixels). Bien sûr, l'algorithme peut être paramétré de manière à diminuer ce temps de traitement, au détriment de la qualité du résultat.
 
 # Références
 
