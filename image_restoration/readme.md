@@ -1,4 +1,4 @@
-# Restauration d'image par réseaux de neurones profonds
+# estauration d'image par réseaux de neurones profonds
 
 ##### Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois
 
@@ -97,9 +97,13 @@ Ces classements se distinguent par les jeux d'images de test utilisés ( BSD ou 
 
 Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma50), [BSD68 sigma25](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma25) et [BSD68 sigma15](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma15) ont été retenus, car ils contiennent un plus large nombre d'algorithmes testés. Les deux derniers ont été testé sur des images avec une simulation de bruit plus "réaliste" (*sigma = 25* et *sigma = 15* respectivement), comme le montrent les exemples ci-dessous.
 
+<hr>
+
 ![Noisy images comparison](noise.png)
 
-​                                  Différents bruit gaussiens simulés dans une image (source de l'image [ici](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg)).
+<p style="align:center;">Différents bruit gaussiens simulés dans une image (source de l'image <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a> ).</p>
+
+<hr>
 
 Sur ces deux derniers classements, les seuls travaux proposant une licence libre de droits sont :
 
@@ -109,9 +113,13 @@ Sur ces deux derniers classements, les seuls travaux proposant une licence libre
 
 D'après les places occupées par ces deux méthodes dans le classement, NLRN devrait donner les meilleurs résultats. Bien que la comparaison visuelle soit tout à fait subjective, NLRN semble effectivement donner de meilleurs résultats pour l'image de test. DNCNN semble lisser l'image et enlever une partie de sa texture. Cela se remarque particulièrement sur le bureau en bois présent dans l'image, ainsi que sur les cheveux devenus flous.
 
+<hr>
+
 ![Denoising comparison](denoising.png)
 
-​                                   Comparaison de méthodes de réduction de bruit (NLRN vs DNCNN)
+<p style="align:center;">Comparaison de méthodes de réduction de bruit (NLRN vs DNCNN)</p>
+
+<hr>
 
 Si seul le critère de qualité du résultat est pris en compte, NLRN semble donc plus efficace. Malheureusement, d'un point de vue rapidité de calcul, le traitement a mis environ 4 secondes pour DNCNN, et 380 pour NLRN, pour une image d'une taille de petite taille (349x400 pixels). Bien sûr, l'algorithme peut être paramétré de manière à diminuer ce temps de traitement, au détriment de la qualité du résultat.
 
