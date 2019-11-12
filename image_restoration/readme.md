@@ -135,7 +135,37 @@ Si seul le critère de qualité du résultat est pris en compte, NLRN semble don
 
 ### Réduction des rayures (stripe noise)
 
+La réduction des rayures dans une image est une technique de restauration d'image plus rarement abordée dans la littérature. Selon le contexte, c'est pourtant une technique qui peut parfois être particulièrement efficace. Ce fut notamment le cas dans le contexte de restauration d'images historiques fournies par un collaborateur du projet, le journaliste et auteur Jean Vandendries. Dans le cadre de l'édition d'un ouvrage sur les sportifs nivellois, un ensemble d'images ont été restaurées avec des réseaux neuronaux. Voici par exemple une photo d'un champion de boxe Belge, Pol Goffaux:
 
+<hr>
+
+![Denoising comparison](images/boxe goffaux bocqué.jpg)
+
+<p style="text-align:center;">Pol goffaux (crédits: Jean Vandendries)</p>
+
+<hr>
+
+Voici un exemple peut-être encore plus parlant:
+
+<hr>
+
+![Denoising comparison](images/boxe robaeys.jpg2.jpg)
+
+<p style="text-align:center;">Jules Robaeys (crédits: Jean Vandendries)</p>
+
+<hr>
+
+Voici quelques implémentations de techniques de réductions de rayures trouvées dans la littérature:
+
+1. [SNRCNN -  Single infrared image stripe noise removal using deep convolutional networks (IEEE Photonics Journal 2017)](https://github.com/Kuangxd/SNRCNN_Matlab)
+
+2. [DLSNUC -  Single-image-based nonuniformity correction of uncooled long-wave  infrared detectors: a deep-learning approach," Appl. Opt. 57, D155-D164  (2018) ](https://github.com/hezw2016/DLS-NUC)
+
+3. [ICSRN - Removing stripe noise from infrared cloud images via deep convolutional networks. (IEEE Photonics Journal 2018)](https://github.com/NUIST-xiaopengfei/ICSRN)
+
+4. [WDNN - Wavelet Deep Neural Network for Stripe Noise Removal (IEEE Access, 7, 2019)](https://github.com/jtguan/Wavelet-Deep-Neural-Network-for-Stripe-Noise-Removal)
+
+Parmi ces quatre algorithmes, seule la dernière est implémentée en Python, et libre de droit (licence Apache 2.0.
 
 
 
