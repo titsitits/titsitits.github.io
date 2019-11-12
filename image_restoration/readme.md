@@ -1,4 +1,4 @@
-# estauration d'image par réseaux de neurones profonds
+# Restauration d'image par réseaux de neurones profonds
 
 ##### Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois
 
@@ -132,6 +132,14 @@ D'après les places occupées par ces deux méthodes dans le classement, NLRN de
 <hr>
 
 Si seul le critère de qualité du résultat est pris en compte, NLRN semble donc plus efficace. Malheureusement, d'un point de vue rapidité de calcul, le traitement a mis environ 4 secondes pour DNCNN, et 380 pour NLRN, pour une image d'une taille de petite taille (349x400 pixels). Bien sûr, l'algorithme peut être paramétré de manière à diminuer ce temps de traitement, au détriment de la qualité du résultat.
+
+### Réduction des rayures (stripe noise)
+
+
+
+
+
+
 
 # Références
 
