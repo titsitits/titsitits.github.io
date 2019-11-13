@@ -21,7 +21,6 @@ A titre d'exemple, voici quelques images de champions de boxe belges originaires
 <hr>
 <p style="text-align:center;">
 <img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style="width:100%; height:auto;">
-</img>
 <br>
 Boxeurs belges (crédits: Jean Vandendries)
 </p>
@@ -75,7 +74,7 @@ Le site paperswithcode.com référence de nombreux classements pour chacune des 
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/image-20191105164649118.png" style:"width:100%; height:auto;"></img>
+<img src="https://titsitits.github.io/image_restoration/image-20191105164649118.png" style="width:100%; height:auto;"></img>
 <br>
 Classements en super-résolution d'image - <a href="https://paperswithcode.com/task/image-super-resolution">paperwithcode.com</a> (05/11/2019)
 </p>
@@ -83,21 +82,22 @@ Classements en super-résolution d'image - <a href="https://paperswithcode.com/t
 
 Le classement comparant le plus grand nombre d'algorithmes est actuellement le "Set5 - 4x upscaling", comparant les résultats sur seulement cinq images spécifiques (voir figure suivante). Cependant, les performances sur un ensemble de cinq images ne garantissent absolument pas l'efficacité sur d'autres images aux caractéristiques potentiellement très différentes. De plus, des contextes d'application typiques nécessitant de la restauration d'image (tel que des images prises par des capteurs low-cost, par des smartphones, de images nocturnes de vidéosurveillance, ou encore images historiques) ne sont pris en compte dans aucun de ces classements.
 
+
+
+<hr><p style="text-align:center;">
+<img src="http://vllab.ucmerced.edu/wlai24/LapSRN/images/Set5.jpg" style="width:100%; height:auto;"></img>
+<br>
+Jeu de données de test Set5. (source: <a href="http://vllab.ucmerced.edu/wlai24/LapSRN/">http://vllab.ucmerced.edu/wlai24/LapSRN/</a> )
+</p><hr>
+
+<hr><p style="text-align:center;">
+<img src="https://titsitits.github.io/image_restoration/image-20191105164930156.png" style="width:100%; height:auto;"></img>
+<br>
+Classement "Set5 - 4x upscaling" - <a href="https://paperswithcode.com/sota/image-super-resolution-on-set5-4x-upscaling">paperwithcode.com</a> (05/11/2019)
+</p>
 <hr>
 
-![Jeu de données Set5](http://vllab.ucmerced.edu/wlai24/LapSRN/images/Set5.jpg)
 
-<p style="text-align:center;">Jeu de données de test Set5. (source: <a href="http://vllab.ucmerced.edu/wlai24/LapSRN/">http://vllab.ucmerced.edu/wlai24/LapSRN/</a> )</p>
-
-<hr>
-
-<hr>
-
-![image-20191105164930156](./image-20191105164930156.png)
-
-<p style="text-align:center;">Classement "Set5 - 4x upscaling" - <a href="https://paperswithcode.com/sota/image-super-resolution-on-set5-4x-upscaling">paperwithcode.com</a> (05/11/2019)</p>
-
-<hr>
 
 Pour terminer, bien que la qualité d'une image est un critère subjectif, des mesures objectives doivent être utilisées non-seulement pour entraîner les algorithmes (par apprentissage profond), mais également pour les comparer de manière objective. Néanmoins, ces mesures ne reflètent pas la réalité, car elles sont généralement basées sur une comparaison d'une image de bonne qualité à une image de qualité artificiellement réduite. Plus de détails sur l'entraînement des algorithmes par apprentissage profond, et des mesures de qualité de reconstruction peuvent se trouver [ici](https://titsitits.github.io/super_resolution/).
 
@@ -127,18 +127,10 @@ Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://pa
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/noisy.png" style:"width:100%; height:auto;"></img>
+<img src="https://titsitits.github.io/image_restoration/images/noisy.png" style="width:100%; height:auto;"></img>
 <br>
 Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
 </p>
-<hr>
-
-<hr>
-
-![Noisy images comparison](noise.png)
-
-<p style="text-align:center;">Différents bruit gaussiens simulés dans une image (source de l'image <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a> ).</p>
-
 <hr>
 
 Sur ces deux derniers classements, les seuls travaux proposant une licence libre de droits sont :
