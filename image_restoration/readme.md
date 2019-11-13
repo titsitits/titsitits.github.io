@@ -129,7 +129,7 @@ Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://pa
 <p style="text-align:center;">
 <img src="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png" style="width:100%; height:auto;"/>
 <br>
-    Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a></a>)
+Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a></a>)
 </p>
 <hr>
 
