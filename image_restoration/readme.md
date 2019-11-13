@@ -126,7 +126,7 @@ Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://pa
 
 <hr>
 <p style="text-align:center;">
-    <img src="images/noisy.png" style:"width:100%; height:auto;"></img>
+    <img src="https://titsitits.github.io/image_restoration/images/noisy.png" style:"width:100%; height:auto;"></img>
 <br>
     Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
 </p>
@@ -164,7 +164,7 @@ La réduction des rayures dans une image est une technique de restauration d'ima
 
 <hr>
 <p style="text-align:center;">
-    <img src="images/boxeurs.png" style:"width:100%; height:auto;"></img>
+    <img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style:"width:100%; height:auto;"></img>
 <br>
     Boxeurs belges (crédits: Jean Vandendries)
 </p>
