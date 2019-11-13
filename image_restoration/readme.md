@@ -12,11 +12,28 @@ Mickaël Tits - CETIC - 05/11/2019
 
 ## Introduction
 
-contexte: Projet de recherche DigiMIR (multimedia information retrieval, avec numediart), intérêt marqué par l'organisation le Rif Tout Dju (club de photographie de Nivelles), et le journaliste/auteur Jean Vandendries.
+Dans le cadre du projet DigiMIR, projet FEDER mené en collaboration entre le [CETIC](https://cetic.be) et [Numediart](https://numediart.org/), nous avons testé et comparé différentes techniques de restauration d'image basées sur de l'intelligence artificielle, et plus particulièrement sur les réseaux de neurones profonds. Ces techniques, bien qu'encore imparfaites et en plein développement, ont un intérêt réel dans différents contextes nécessitant d'améliorer la qualité d'une image. Les applications peuvent aller de la vidéo-surveillance à l'histoire et l'art, en passant par l'imagerie médicale ou satellite. De manière générale, toute image de faible qualité peut bénéficier de techniques de restauration d'image, que ce soit dû à la détérioration d'un support par le temps, ou la qualité d'acquisition d'origine (capteur low-cost ou âgé, contraintes spécifiques à un canal d'acquisition, e.g. images infrarouges, satellites, IRM), ou encore la compression numérique.
 
-applications:  images historiques, caméras surveillance, récup images numérisées, images compressées sur le web, capteurs low-cost/smartphones, images médicales
+Une collaboration avec une organisation culturelle belge, le [Rif tout dju](http://riftoutdju.be/), et ses contacts avec le journaliste et auteur Jean Vandendries, nous a fourni un cas d'application concret pour tester les techniques identifiées lors de notre recherche bibliographique. Grâce à ce contexte, nous démontrerons dans cet article l'intérêt de certaines techniques de restauration sur des images historiques.
 
-use case testé: Ouvrage de Jean Vandendries (en cours d'édition)
+A titre d'exemple, voici quelques images de champions de boxe belges originaires de Nivelles, fournies par Jean Vandendries comme échantillons de test pour ce projet.
+
+<hr>
+<p style="text-align:center;">
+    <img src="images/boxeurs.png" style:"width:100%; height:auto;"></img>
+<br>
+    Boxeurs belges (crédits: Jean Vandendries)
+</p>
+<hr>
+
+Ces images présentent de nombreux défauts, dont quatre ont été retenus en particulier:
+
+1. Le bruit non-structuré (bruit blanc, ou gaussien) présent dans les images
+2. Le bruit structuré: des rayures horizontales et verticales
+3. La couleur (monochrome)
+4. La faible résolution
+
+Nous avons dès lors testé et comparé différentes techniques basées sur les réseaux neuronaux permettant d'améliorer ces images. Nous avons identifié différents types de techniques, corrigeant chacune un type de défauts, et avons développé un pipeline d'opérations permettant une restauration plus "globale" des images. 
 
 ## Un pipeline de techniques de restauration d'image
 
@@ -108,6 +125,14 @@ Ces classements se distinguent par les jeux d'images de test utilisés ( BSD ou 
 Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma50), [BSD68 sigma25](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma25) et [BSD68 sigma15](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma15) ont été retenus, car ils contiennent un plus large nombre d'algorithmes testés. Les deux derniers ont été testé sur des images avec une simulation de bruit plus "réaliste" (*sigma = 25* et *sigma = 15* respectivement), comme le montrent les exemples ci-dessous.
 
 <hr>
+<p style="text-align:center;">
+    <img src="images/noisy.png" style:"width:100%; height:auto;"></img>
+<br>
+    Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
+</p>
+<hr>
+
+<hr>
 
 ![Noisy images comparison](noise.png)
 
@@ -135,37 +160,28 @@ Si seul le critère de qualité du résultat est pris en compte, NLRN semble don
 
 ### Réduction des rayures (stripe noise)
 
-La réduction des rayures dans une image est une technique de restauration d'image plus rarement abordée dans la littérature. Selon le contexte, c'est pourtant une technique qui peut parfois être particulièrement efficace. Ce fut notamment le cas dans le contexte de restauration d'images historiques fournies par un collaborateur du projet, le journaliste et auteur Jean Vandendries. Dans le cadre de l'édition d'un ouvrage sur les sportifs nivellois, un ensemble d'images ont été restaurées avec des réseaux neuronaux. Voici par exemple une photo d'un champion de boxe Belge, Pol Goffaux:
+La réduction des rayures dans une image est une technique de restauration d'image plus rarement abordée dans la littérature. Selon le contexte, c'est pourtant une technique qui peut parfois être particulièrement efficace. Ce fut notamment le cas dans le contexte de restauration d'images historiques fournies par un collaborateur du projet, le journaliste et auteur Jean Vandendries. Dans le cadre de l'édition d'un ouvrage sur les sportifs nivellois, un ensemble d'images ont été restaurées avec des réseaux neuronaux. L'image ci-dessous reprend par exemple les photos historiques, dans leur état d'origine, de quelques champions de boxe belges.
 
 <hr>
-
-![Denoising comparison](images/boxe goffaux bocqué.jpg)
-
-<p style="text-align:center;">Pol goffaux (crédits: Jean Vandendries)</p>
-
+<p style="text-align:center;">
+    <img src="images/boxeurs.png" style:"width:100%; height:auto;"></img>
+<br>
+    Boxeurs belges (crédits: Jean Vandendries)
+</p>
 <hr>
 
-Voici un exemple peut-être encore plus parlant:
+Ces trois images, outre une certaine quantité de bruit non-structure (blanc ou gaussien), présentent également un bruit structuré, caractérisé par des rayures verticales et horizontales. Ces rayures peuvent être dues au support initial de l'image capturée (support physique, photo d'un écran).
 
-<hr>
-
-![Denoising comparison](images/boxe robaeys.jpg2.jpg)
-
-<p style="text-align:center;">Jules Robaeys (crédits: Jean Vandendries)</p>
-
-<hr>
-
-Voici quelques implémentations de techniques de réductions de rayures trouvées dans la littérature:
+Différentes implémentations de techniques de réductions de rayures ont été trouvées dans la littérature:
 
 1. [SNRCNN -  Single infrared image stripe noise removal using deep convolutional networks (IEEE Photonics Journal 2017)](https://github.com/Kuangxd/SNRCNN_Matlab)
-
 2. [DLSNUC -  Single-image-based nonuniformity correction of uncooled long-wave  infrared detectors: a deep-learning approach," Appl. Opt. 57, D155-D164  (2018) ](https://github.com/hezw2016/DLS-NUC)
 
 3. [ICSRN - Removing stripe noise from infrared cloud images via deep convolutional networks. (IEEE Photonics Journal 2018)](https://github.com/NUIST-xiaopengfei/ICSRN)
 
 4. [WDNN - Wavelet Deep Neural Network for Stripe Noise Removal (IEEE Access, 7, 2019)](https://github.com/jtguan/Wavelet-Deep-Neural-Network-for-Stripe-Noise-Removal)
 
-Parmi ces quatre algorithmes, seule la dernière est implémentée en Python, et libre de droit (licence Apache 2.0.
+Parmi ces quatre algorithmes, seule la dernière est implémentée en Python, et libre de droit (licence Apache 2.0. Cette méthode a donc été testée sur ces images aux bruits caractéristiques, avec des résultats intéressants.
 
 
 
