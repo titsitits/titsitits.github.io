@@ -18,7 +18,14 @@ Une collaboration avec une organisation culturelle belge, le [Rif tout dju](http
 
 A titre d'exemple, voici quelques images de champions de boxe belges originaires de Nivelles, fournies par Jean Vandendries comme échantillons de test pour ce projet.
 
-<hr><p style="text-align:center;"><img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style:"width:100%; height:auto;"></img><br>Boxeurs belges (crédits: Jean Vandendries)</p><hr>
+<hr>
+<p style="text-align:center;">
+<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style="width:100%; height:auto;">
+</img>
+<br>
+Boxeurs belges (crédits: Jean Vandendries)
+</p>
+<hr>
 
 Ces images présentent de nombreux défauts, dont quatre ont été retenus en particulier:
 
