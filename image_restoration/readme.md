@@ -149,7 +149,7 @@ Sur ces deux derniers classements, les seuls travaux proposant une licence libre
 
 D'après les places occupées par ces deux méthodes dans le classement, NLRN devrait donner les meilleurs résultats. Bien que la comparaison visuelle soit tout à fait subjective, NLRN semble effectivement donner de meilleurs résultats pour l'image de test. DNCNN semble lisser l'image et enlever une partie de sa texture. Cela se remarque particulièrement sur le bureau en bois présent dans l'image, ainsi que sur les cheveux devenus flous. 
 
-(NDLR: vous pouvez visualiser des versions plus grandes des images via click droit - afficher l'image)
+(NDLR: vous pouvez visualiser une version plus grande des images en cliquant dessus)
 
 <hr>
 <p style="text-align:center;">
@@ -202,6 +202,3 @@ Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendr
 </p>
 <hr>
 
-# Références
-
-[1]:  Berkeley Segmentation Dataset :  Martin, D., Fowlkes, C., Tal, D., & Malik, J. (2001, July). A  database of human segmented natural images and its application to  evaluating segmentation algorithms and measuring ecological statistics.  Vancouver: Iccv. 
