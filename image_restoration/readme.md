@@ -129,7 +129,7 @@ Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://pa
 <p style="text-align:center;">
 <img src="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png" style="width:100%; height:auto;"/>
 <br>
-Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a></a>)
+Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
 </p>
 <hr>
 
@@ -147,13 +147,15 @@ Sur ces deux derniers classements, les seuls travaux proposant une licence libre
 <!-- 2. [N3Net - Neural Nearest Neighbors Networks (NeurIPS, 2018)](https://github.com/visinf/n3net) - licence ad-hoc, utilisation non-commerciale -->
 3. [DnCNN - Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for Image Denoising (TIP, 2017)](https://github.com/husqin/DnCNN-keras) - MIT (implémentation Keras uniquement)
 
-D'après les places occupées par ces deux méthodes dans le classement, NLRN devrait donner les meilleurs résultats. Bien que la comparaison visuelle soit tout à fait subjective, NLRN semble effectivement donner de meilleurs résultats pour l'image de test. DNCNN semble lisser l'image et enlever une partie de sa texture. Cela se remarque particulièrement sur le bureau en bois présent dans l'image, ainsi que sur les cheveux devenus flous.
+D'après les places occupées par ces deux méthodes dans le classement, NLRN devrait donner les meilleurs résultats. Bien que la comparaison visuelle soit tout à fait subjective, NLRN semble effectivement donner de meilleurs résultats pour l'image de test. DNCNN semble lisser l'image et enlever une partie de sa texture. Cela se remarque particulièrement sur le bureau en bois présent dans l'image, ainsi que sur les cheveux devenus flous. 
+
+(NDLR: vous pouvez visualiser des versions plus grandes des images via click droit - afficher l'image)
 
 <hr>
 <p style="text-align:center;">
 <img src="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png" style="width:100%; height:auto;"/>
 <br>
-Comparaison de méthodes de réduction de bruit gaussien (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a></a>)
+Comparaison de méthodes de réduction de bruit gaussien (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
 </p>
 <hr>
 
@@ -165,7 +167,9 @@ Comparaison de méthodes de réduction de bruit gaussien (crédits image: Jean V
 </p>
 <hr>
 
-Si seul le critère de qualité du résultat est pris en compte, NLRN semble donc plus efficace. Malheureusement, d'un point de vue rapidité de calcul, le traitement a mis environ 4 secondes pour DNCNN, et 380 pour NLRN, pour une image d'une taille de petite taille (349x400 pixels). Bien sûr, l'algorithme peut être paramétré de manière à diminuer ce temps de traitement, au détriment de la qualité du résultat.
+Si seul le critère de qualité du résultat est pris en compte, NLRN semble donc plus efficace. Le résultats semble particulièrement bon sur l'image d'Anne Franck. Le résultat semble moins bon sur l'image de test, notamment à cause de l'apparition de certaines textures irréalistes dans les images résultantes. Le résultat de DNCNN semble caractérisé par une perte nette de relief, due à un lissage excessif.
+
+Bien que la qualité de restauration soit le critère principal, le coût computationnel (ou le temps de calcul) d'une technique est un critère important en pratique, essentiellement pour une application sur un grand nombre d'image, ou en temps réel (cas plutôt rencontré dans d'autres contextes, tels que la surveillance vidéo ou satellite). Ainsi, d'un point de vue rapidité de calcul, le traitement a mis environ 4 secondes pour DNCNN, et 380 pour NLRN, pour une version d'image de petite taille (349x400 pixels). Bien sûr, l'algorithme peut être paramétré de manière à diminuer ce temps de traitement, au détriment de la qualité du résultat. Néanmoins, NLRN est particulièrement lent, en comparaison à DNCNN, et en comparaison avec les autres techniques dont nous parlons plus bas.
 
 ### Réduction des rayures (stripe noise)
 
@@ -180,7 +184,23 @@ La réduction des rayures dans une image est une technique de restauration d'ima
 
 Parmi ces quatre algorithmes, seule la dernière est implémentée en Python, et libre de droit (licence Apache 2.0. Cette méthode a donc été testée sur ces images aux bruits caractéristiques, avec des résultats intéressants.
 
+La plupart de ces algorithmes ne suppriment que les rayures verticales, car elles ont été développées dans le contexte de traitement d'images obtenues par capteurs infrarouges, dont les rayures verticales sont un bruit caractéristique. Bien que ces algorithmes sont au départ dédiés aux images infrarouges, ils ont néanmoins un intérêt tout particulier dans nos images historiques.
 
+Afin d'obtenir un algorithme libre de droit, et généralisé aux image historiques, nous avons adapté l'algorithme WDNN, de manière à éliminer à la fois les rayures verticales et horizontales.
+
+Lors des différents tests que nous avons réalisés, nous avons pu constater que dans certains cas, l'algorithme de réduisait que partiellement les rayures des images. Nous avons alors testé une application séquentielle multiple de notre version adaptée de WDNN, réduisant successivement les rayures verticales et horizontales. Nous avons pu constater que cette application multiple permettait dans certains cas d'améliorer la suppression des rayures. Par ailleurs, aucune détérioration de l'image (apparition d'artéfacts) n'est constatée.
+
+D'un point de vue coût computationnel, WDNN est très léger en comparaison à NLRN (réduction de bruit). L'ordre de grandeur pour une image de taille moyenne (500x500) est de 0.1 seconde, ce qui rend adéquate une utilisation multiple de cette technique.
+
+<hr>
+<p style="text-align:center;">
+<img src="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png" style="width:100%; height:auto;"/>
+<img src="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png" style="width:100%; height:auto;"/>
+<img src="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png" style="width:100%; height:auto;"/>
+<br>
+Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendries).
+</p>
+<hr>
 
 # Références
 
