@@ -19,8 +19,8 @@ Une collaboration avec une organisation culturelle belge, le [Rif tout dju](http
 A titre d'exemple, voici quelques images de champions de boxe belges originaires de Nivelles, fournies par Jean Vandendries comme échantillons de test pour ce projet.
 
 <hr>
-<p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style="width:100%; height:auto;"/>
+<p style="text-align:center;"><a href="https://titsitits.github.io/image_restoration/images/boxeurs.png">
+<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style="width:100%; height:auto;"/></a>
 <br>
 Boxeurs belges (crédits: Jean Vandendries)
 </p>
@@ -127,7 +127,7 @@ Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://pa
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png" style="width:100%; height:auto;"/>
+<a href="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png"><img src="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png" style="width:100%; height:auto;"/></a>
 <br>
 Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
 </p>
@@ -135,7 +135,7 @@ Différents bruits gaussiens simulés dans une image (image source: <a href="htt
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/noisy.png" style="width:100%; height:auto;"/>
+<a href="https://titsitits.github.io/image_restoration/images/noisy.png"><img src="https://titsitits.github.io/image_restoration/images/noisy.png" style="width:100%; height:auto;"/></a>
 <br>
 Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
 </p>
@@ -153,7 +153,7 @@ D'après les places occupées par ces deux méthodes dans le classement, NLRN de
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png" style="width:100%; height:auto;"/>
+<a href="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png"><img src="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png" style="width:100%; height:auto;"/></a>
 <br>
 Comparaison de méthodes de réduction de bruit gaussien (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
 </p>
@@ -161,7 +161,7 @@ Comparaison de méthodes de réduction de bruit gaussien (image source: <a href=
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png" style="width:100%; height:auto;"/>
+<a href="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png"><img src="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png" style="width:100%; height:auto;"/></a>
 <br>
 Comparaison de méthodes de réduction de bruit gaussien (crédits image: Jean Vandendries)
 </p>
@@ -194,9 +194,9 @@ D'un point de vue coût computationnel, WDNN est très léger en comparaison à 
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png" style="width:100%; height:auto;"/>
-<img src="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png" style="width:100%; height:auto;"/>
-<img src="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png" style="width:100%; height:auto;"/>
+<a href="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png"><img src="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png"><img src="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png"><img src="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png" style="width:100%; height:auto;"/></a>
 <br>
 Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendries).
 </p>
