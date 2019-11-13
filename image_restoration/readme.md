@@ -20,7 +20,7 @@ A titre d'exemple, voici quelques images de champions de boxe belges originaires
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style="width:100%; height:auto;">
+<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style="width:100%; height:auto;"/>
 <br>
 Boxeurs belges (crédits: Jean Vandendries)
 </p>
@@ -74,7 +74,7 @@ Le site paperswithcode.com référence de nombreux classements pour chacune des 
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/image-20191105164649118.png" style="width:100%; height:auto;"></img>
+<img src="https://titsitits.github.io/image_restoration/image-20191105164649118.png" style="width:100%; height:auto;"/>
 <br>
 Classements en super-résolution d'image - <a href="https://paperswithcode.com/task/image-super-resolution">paperwithcode.com</a> (05/11/2019)
 </p>
@@ -85,13 +85,13 @@ Le classement comparant le plus grand nombre d'algorithmes est actuellement le "
 
 
 <hr><p style="text-align:center;">
-<img src="http://vllab.ucmerced.edu/wlai24/LapSRN/images/Set5.jpg" style="width:100%; height:auto;"></img>
+<img src="http://vllab.ucmerced.edu/wlai24/LapSRN/images/Set5.jpg" style="width:100%; height:auto;"/>
 <br>
 Jeu de données de test Set5. (source: <a href="http://vllab.ucmerced.edu/wlai24/LapSRN/">http://vllab.ucmerced.edu/wlai24/LapSRN/</a> )
 </p><hr>
 
 <hr><p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/image-20191105164930156.png" style="width:100%; height:auto;"></img>
+<img src="https://titsitits.github.io/image_restoration/image-20191105164930156.png" style="width:100%; height:auto;"/>
 <br>
 Classement "Set5 - 4x upscaling" - <a href="https://paperswithcode.com/sota/image-super-resolution-on-set5-4x-upscaling">paperwithcode.com</a> (05/11/2019)
 </p>
@@ -127,7 +127,15 @@ Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://pa
 
 <hr>
 <p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/noisy.png" style="width:100%; height:auto;"></img>
+<img src="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png" style="width:100%; height:auto;"/>
+<br>
+    Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a></a>)
+</p>
+<hr>
+
+<hr>
+<p style="text-align:center;">
+<img src="https://titsitits.github.io/image_restoration/images/noisy.png" style="width:100%; height:auto;"/>
 <br>
 Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
 </p>
@@ -142,11 +150,19 @@ Sur ces deux derniers classements, les seuls travaux proposant une licence libre
 D'après les places occupées par ces deux méthodes dans le classement, NLRN devrait donner les meilleurs résultats. Bien que la comparaison visuelle soit tout à fait subjective, NLRN semble effectivement donner de meilleurs résultats pour l'image de test. DNCNN semble lisser l'image et enlever une partie de sa texture. Cela se remarque particulièrement sur le bureau en bois présent dans l'image, ainsi que sur les cheveux devenus flous.
 
 <hr>
+<p style="text-align:center;">
+<img src="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png" style="width:100%; height:auto;"/>
+<br>
+Comparaison de méthodes de réduction de bruit gaussien (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a></a>)
+</p>
+<hr>
 
-![Denoising comparison](denoising.png)
-
-<p style="text-align:center;">Comparaison de méthodes de réduction de bruit (NLRN vs DNCNN)</p>
-
+<hr>
+<p style="text-align:center;">
+<img src="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png" style="width:100%; height:auto;"/>
+<br>
+Comparaison de méthodes de réduction de bruit gaussien (crédits image: Jean Vandendries)
+</p>
 <hr>
 
 Si seul le critère de qualité du résultat est pris en compte, NLRN semble donc plus efficace. Malheureusement, d'un point de vue rapidité de calcul, le traitement a mis environ 4 secondes pour DNCNN, et 380 pour NLRN, pour une image d'une taille de petite taille (349x400 pixels). Bien sûr, l'algorithme peut être paramétré de manière à diminuer ce temps de traitement, au détriment de la qualité du résultat.
@@ -163,8 +179,6 @@ La réduction des rayures dans une image est une technique de restauration d'ima
 4. [WDNN - Wavelet Deep Neural Network for Stripe Noise Removal (IEEE Access, 7, 2019)](https://github.com/jtguan/Wavelet-Deep-Neural-Network-for-Stripe-Noise-Removal)
 
 Parmi ces quatre algorithmes, seule la dernière est implémentée en Python, et libre de droit (licence Apache 2.0. Cette méthode a donc été testée sur ces images aux bruits caractéristiques, avec des résultats intéressants.
-
-
 
 # Références
 
