@@ -20,9 +20,9 @@ A titre d'exemple, voici quelques images de champions de boxe belges originaires
 
 <hr>
 <p style="text-align:center;">
-    <img src="images/boxeurs.png" style:"width:100%; height:auto;"></img>
+<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style:"width:100%; height:auto;"></img>
 <br>
-    Boxeurs belges (crédits: Jean Vandendries)
+Boxeurs belges (crédits: Jean Vandendries)
 </p>
 <hr>
 
@@ -126,9 +126,9 @@ Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://pa
 
 <hr>
 <p style="text-align:center;">
-    <img src="https://titsitits.github.io/image_restoration/images/noisy.png" style:"width:100%; height:auto;"></img>
+<img src="https://titsitits.github.io/image_restoration/images/noisy.png" style:"width:100%; height:auto;"></img>
 <br>
-    Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
+Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
 </p>
 <hr>
 
@@ -160,19 +160,7 @@ Si seul le critère de qualité du résultat est pris en compte, NLRN semble don
 
 ### Réduction des rayures (stripe noise)
 
-La réduction des rayures dans une image est une technique de restauration d'image plus rarement abordée dans la littérature. Selon le contexte, c'est pourtant une technique qui peut parfois être particulièrement efficace. Ce fut notamment le cas dans le contexte de restauration d'images historiques fournies par un collaborateur du projet, le journaliste et auteur Jean Vandendries. Dans le cadre de l'édition d'un ouvrage sur les sportifs nivellois, un ensemble d'images ont été restaurées avec des réseaux neuronaux. L'image ci-dessous reprend par exemple les photos historiques, dans leur état d'origine, de quelques champions de boxe belges.
-
-<hr>
-<p style="text-align:center;">
-    <img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style:"width:100%; height:auto;"></img>
-<br>
-    Boxeurs belges (crédits: Jean Vandendries)
-</p>
-<hr>
-
-Ces trois images, outre une certaine quantité de bruit non-structure (blanc ou gaussien), présentent également un bruit structuré, caractérisé par des rayures verticales et horizontales. Ces rayures peuvent être dues au support initial de l'image capturée (support physique, photo d'un écran).
-
-Différentes implémentations de techniques de réductions de rayures ont été trouvées dans la littérature:
+La réduction des rayures dans une image est une technique de restauration d'image plus rarement abordée dans la littérature. Selon le contexte, c'est pourtant une technique qui peut parfois être particulièrement efficace. Différentes implémentations de techniques de réductions de rayures ont été trouvées dans la littérature:
 
 1. [SNRCNN -  Single infrared image stripe noise removal using deep convolutional networks (IEEE Photonics Journal 2017)](https://github.com/Kuangxd/SNRCNN_Matlab)
 2. [DLSNUC -  Single-image-based nonuniformity correction of uncooled long-wave  infrared detectors: a deep-learning approach," Appl. Opt. 57, D155-D164  (2018) ](https://github.com/hezw2016/DLS-NUC)
@@ -182,8 +170,6 @@ Différentes implémentations de techniques de réductions de rayures ont été 
 4. [WDNN - Wavelet Deep Neural Network for Stripe Noise Removal (IEEE Access, 7, 2019)](https://github.com/jtguan/Wavelet-Deep-Neural-Network-for-Stripe-Noise-Removal)
 
 Parmi ces quatre algorithmes, seule la dernière est implémentée en Python, et libre de droit (licence Apache 2.0. Cette méthode a donc été testée sur ces images aux bruits caractéristiques, avec des résultats intéressants.
-
-
 
 
 
