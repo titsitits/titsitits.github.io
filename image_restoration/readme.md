@@ -202,3 +202,9 @@ Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendr
 </p>
 <hr>
 
+### Colorisation
+
+
+
+### Super-résolution
+
