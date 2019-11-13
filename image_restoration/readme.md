@@ -18,13 +18,7 @@ Une collaboration avec une organisation culturelle belge, le [Rif tout dju](http
 
 A titre d'exemple, voici quelques images de champions de boxe belges originaires de Nivelles, fournies par Jean Vandendries comme échantillons de test pour ce projet.
 
-<hr>
-<p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style:"width:100%; height:auto;"></img>
-<br>
-Boxeurs belges (crédits: Jean Vandendries)
-</p>
-<hr>
+<hr><p style="text-align:center;"><img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style:"width:100%; height:auto;"></img><br>Boxeurs belges (crédits: Jean Vandendries)</p><hr>
 
 Ces images présentent de nombreux défauts, dont quatre ont été retenus en particulier:
 
@@ -73,11 +67,11 @@ Chaque implémentation d'une technique est testée et validée différemment par
 Le site paperswithcode.com référence de nombreux classements pour chacune des techniques évoquées plus haut. Pour la super-résolution par exemple, [six classements](https://paperswithcode.com/task/image-super-resolution) sont actuellement référencés:
 
 <hr>
-
-![image-20191105164649118](./image-20191105164649118.png) 
-
-<p style="text-align:center;">Classements en super-résolution d'image - <a href="https://paperswithcode.com/task/image-super-resolution">paperwithcode.com</a> (05/11/2019)</p>
-
+<p style="text-align:center;">
+<img src="https://titsitits.github.io/image_restoration/image-20191105164649118.png" style:"width:100%; height:auto;"></img>
+<br>
+Classements en super-résolution d'image - <a href="https://paperswithcode.com/task/image-super-resolution">paperwithcode.com</a> (05/11/2019)
+</p>
 <hr>
 
 Le classement comparant le plus grand nombre d'algorithmes est actuellement le "Set5 - 4x upscaling", comparant les résultats sur seulement cinq images spécifiques (voir figure suivante). Cependant, les performances sur un ensemble de cinq images ne garantissent absolument pas l'efficacité sur d'autres images aux caractéristiques potentiellement très différentes. De plus, des contextes d'application typiques nécessitant de la restauration d'image (tel que des images prises par des capteurs low-cost, par des smartphones, de images nocturnes de vidéosurveillance, ou encore images historiques) ne sont pris en compte dans aucun de ces classements.
