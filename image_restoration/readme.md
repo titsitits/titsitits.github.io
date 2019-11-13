@@ -180,6 +180,8 @@ La réduction des rayures dans une image est une technique de restauration d'ima
 
 Parmi ces quatre algorithmes, seule la dernière est implémentée en Python, et libre de droit (licence Apache 2.0. Cette méthode a donc été testée sur ces images aux bruits caractéristiques, avec des résultats intéressants.
 
+
+
 # Références
 
 [1]:  Berkeley Segmentation Dataset :  Martin, D., Fowlkes, C., Tal, D., & Malik, J. (2001, July). A  database of human segmented natural images and its application to  evaluating segmentation algorithms and measuring ecological statistics.  Vancouver: Iccv. 
