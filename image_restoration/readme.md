@@ -206,5 +206,15 @@ Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendr
 
 
 
+<hr>
+<p style="text-align:center;">
+<a href="https://titsitits.github.io/image_restoration/images/colorization_gillain.png"><img src="https://titsitits.github.io/image_restoration/images/colorization_gillain.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/colorization_robaeys.png"><img src="https://titsitits.github.io/image_restoration/images/colorization_robaeys.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/colorization_goffaux.png"><img src="https://titsitits.github.io/image_restoration/images/colorization_goffaux.png" style="width:100%; height:auto;"/></a>
+<br>
+Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendries).
+</p>
+<hr>
+
 ### Super-résolution
 
