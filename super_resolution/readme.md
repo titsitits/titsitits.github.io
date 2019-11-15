@@ -6,8 +6,7 @@
 
 <h4 class="centered"> <a href="https://www.cetic.be/Mickael-Tits?lang=fr">Mickaël Tits - CETIC asbl</a> - 03/07/2019</h4>
 <p class="fig">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 40%;" />
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 40%;" />
+<img src="https://titsitits.github.io/super_resolution/images/super_res.png" />
 </p>
 
 <hr>
@@ -119,8 +118,7 @@ https://colab.research.google.com/github/titsitits/Test_images_superresolution/b
 
 <hr>
 <p class="fig">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 45%; object-fit: contain;"/>
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 45%; object-fit: contain;" />
+<img src="https://titsitits.github.io/super_resolution/images/super_res.png" />
 <br>
 Figure 4. Exemple de super-résolution d’image, obtenu avec ESRGAN.</p><hr>
 
