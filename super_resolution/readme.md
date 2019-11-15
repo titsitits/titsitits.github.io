@@ -1,13 +1,14 @@
 <h1 class="centered">White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ?</h1>
 <hr>
 
-<h5 class="centered">Un notebook self-contained pour tester différents algorithmes de Deep Learning</h5>
+<h3 class="title">Un notebook self-contained pour tester différents algorithmes de Deep Learning</h5>
 
-<h6 class="centered">Mickaël Tits - CETIC asbl - https://www.cetic.be/Mickael-Tits?lang=fr - 03/07/2019</h6>
+<h4 class="centered">Mickaël Tits - CETIC asbl - https://www.cetic.be/Mickael-Tits?lang=fr - 03/07/2019</h4>
 <p class="fig">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 40%;" />
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 40%;" />
 </p>
+
 <hr>
 
 
