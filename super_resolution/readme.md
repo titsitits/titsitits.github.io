@@ -7,7 +7,8 @@
 <p class="fig">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 40%;" />
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 40%;" />
-</p><br><hr>
+</p>
+<hr>
 
 
 
@@ -32,8 +33,6 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png" />
 Figure 1\. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.</span><sup id='#ftnt2'>[[2]]</sup>
 </p>
-
-
 
 <span>Ce concept général d’entraînement automatique d’un algorithme à partir d’exemples et de la minimisation d’une fonction de coût est le fondement du machine learning, une branche importante de l’intelligence artificielle. Le Deep Learning est une sous-branche particulière du machine learning, basée sur un type spécifique d’algorithmes, à savoir les réseaux de neurones. Les réseaux de neurones sont une famille d’algorithmes permettant d’estimer des fonctions extrêmement complexes, et sont appelés ainsi car ils sont inspirés par la manière dont fonctionne le cerveau (voir Figure 1). En effet, l’apprentissage au niveau du cerveau se fait par un réarrangement perpétuel des connexions (les synapses) entre un grand nombre de petites unités appelés neurones, permettant à un animal d’apprendre progressivement n’importe quelle tâche grâce des exemples et de l’entraînement, permettant ainsi de reconnaître un chat ou chien, de comprendre des mots, d’apprendre à marcher, etc. Ce phénomène est communément connu sous le nom de plasticité cérébrale</span><sup>[[3]](#ftnt3)</sup><span class="c1 c4">.</span>
 
