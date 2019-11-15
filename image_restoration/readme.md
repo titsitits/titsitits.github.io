@@ -1,10 +1,10 @@
 # Restauration d'image par réseaux de neurones profonds
 
-##### Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois
+<h3 class="title">Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois</h3>
 
-<h6>Mickaël Tits - CETIC - 05/11/2019</h6>
+<h4 class="center">Mickaël Tits - CETIC - 05/11/2019</h4>
 
-<h6>(ON-GOING WORK!)</h6>
+<h6 class="title">(ON-GOING WORK!)</h6>
 
 
 
