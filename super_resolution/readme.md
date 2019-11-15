@@ -1,4 +1,5 @@
-<h1 class="centered">White Paper - Super-résolution d’images par intelligence artificielle - Fiction ou Révolution ?</h1>
+<h1 class="centered">White Paper - Super-résolution d’images par intelligence artificielle</h1>
+<h2>Fiction ou Révolution ?</h2>
 <hr>
 
 <h3 class="title">Un notebook self-contained pour tester différents algorithmes de Deep Learning</h5>
