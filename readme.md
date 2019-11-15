@@ -1,5 +1,4 @@
-# Welcome to my work - Mickaël Tits @ Cetic
-
+<h1 class="centered">Welcome to my work - Mickaël Tits @ Cetic</h1>
 
 ## Pages
 
@@ -7,17 +6,17 @@
 
 #### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
-<p align="center">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" width="300" />
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" width="300" />
+<p class=fig>
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width:40%;" />
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png"style="width:40%;" />
 </p>
 
 ### Projects
 
 #### [Open-image-restoration: A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](http://titsitits.github.io/open-image-restoration)
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/titsitits/open-image-restoration/master/Anne-Franck.png" width="600" />
+<p class="fig">
+<img src="https://raw.githubusercontent.com/titsitits/open-image-restoration/master/Anne-Franck.png" />
 </p>
 
 This project gathers together and packages various image restoration techniques that follow various criteria:

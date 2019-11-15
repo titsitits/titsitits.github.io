@@ -11,12 +11,9 @@
 
 <hr>
 
-
-
 Suite au succès de notre premier article de blog sur le Deep Learning, dans un contexte artistique (https://www.cetic.be/Deep-Learning-et-styles-artistiques), nous avons décidé de diffuser une série d’articles pour mieux faire connaître les applications du Deep Learning dans le traitement multimédia à un large public en francophonie, et plus particulièrement en Wallonie. En parallèle, La [Deep Learning Academy](https://www.linkedin.com/groups/8614751/&sa=D&ust=1566390330218000), lancée conjointement par UCLouvain et UMONS, et récemment rejointe par le CETIC, a entamé une initiative pour le test et la diffusion d’outils technologiques utilisant du Deep Learning, regroupés actuellement sous le lien suivant: https://deep-learning-academy.github.io/
 
-
-<p align="justify">C’est donc dans cette démarche commune que nous proposons un premier article blanc, accompagné d’un [notebook colab](https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb) de démonstration, sur la super-résolution d’images.</p>
+C’est donc dans cette démarche commune que nous proposons un premier article blanc, accompagné d’un [notebook colab](https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb) de démonstration, sur la super-résolution d’images.
 
 Dans cet article, nous parlerons plus particulièrement d’un ensemble techniques permettant d’améliorer la qualité d’une image grâce à une augmentation artificielle des pixels. Ces techniques s’appellent couramment “super-résolution” d’image. Les méthodes les plus performantes aujourd’hui sont toutes basées sur les réseaux de neurones profonds (Deep Neural Networks - DNN).
 
@@ -30,10 +27,10 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 <span>L’architecture d’un réseau de neurones permet de définir une fonction plus ou moins complexe, avec des paramètres (les poids des liens entre les neurones) qui vont devoir être choisis de manière à estimer au mieux cette fonction. Ce choix des paramètres se fait de manière à ce que la fonction donne un résultat le plus proche possible du prix réel pour toutes les maisons du jeu d’entraînement. Ce processus est effectué par un processus d’optimisation, et plus particulièrement d’une minimisation de l’erreur des prédictions sur toutes les maisons du jeu d’entraînement (appelée fonction de coût)</span> <span class="c28">(c’est-à-dire une minimisation de l’écart entre leur prix réel et le prix prédit à partir de leur surface et de leur âge par la fonction estimée)</span><span>. Cette optimisation se base généralement sur l’algorithme de descente de gradient</span> <sup id='#ftnt1'>[[1]]</sup><span class="c1 c4">. Cet algorithme permet de calculer la modification des paramètres (les poids des liens entre les neurones) qui va permettre de faire baisser le plus l’erreur de prédiction. Ce processus est appliqué de manière itérative par petits pas jusqu’à atteindre un minimum de l’erreur de prédiction sur toutes les maisons d’entraînement. En général, on teste ensuite la fonction obtenue (le réseau de neurone avec ses paramètres bien choisis) sur un nouvel ensemble de maisons qui n’ont pas été utilisées pour l’entraînement, pour vérifier si la fonction permet de réellement estimer le prix des maisons, et n’a pas juste retenu par coeur le prix des maisons du jeu d’entraînement. On parle de phase de test.</span>
 
-<p class="fig">
+<hr><p class="fig">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png" />
-Figure 1\. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.</span><sup id='#ftnt2'>[[2]]</sup>
-</p>
+Figure 1. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.</span><sup id='#ftnt2'>[[2]]</sup>
+</p><hr>
 
 <span>Ce concept général d’entraînement automatique d’un algorithme à partir d’exemples et de la minimisation d’une fonction de coût est le fondement du machine learning, une branche importante de l’intelligence artificielle. Le Deep Learning est une sous-branche particulière du machine learning, basée sur un type spécifique d’algorithmes, à savoir les réseaux de neurones. Les réseaux de neurones sont une famille d’algorithmes permettant d’estimer des fonctions extrêmement complexes, et sont appelés ainsi car ils sont inspirés par la manière dont fonctionne le cerveau (voir Figure 1). En effet, l’apprentissage au niveau du cerveau se fait par un réarrangement perpétuel des connexions (les synapses) entre un grand nombre de petites unités appelés neurones, permettant à un animal d’apprendre progressivement n’importe quelle tâche grâce des exemples et de l’entraînement, permettant ainsi de reconnaître un chat ou chien, de comprendre des mots, d’apprendre à marcher, etc. Ce phénomène est communément connu sous le nom de plasticité cérébrale</span><sup>[[3]](#ftnt3)</sup><span class="c1 c4">.</span>
 
@@ -43,11 +40,11 @@ Figure 1\. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle
 
 <span class="c1 c4">Cette révolution technologique a permis d’étendre le domaine de l’intelligence artificielle à de nombreux nouveaux domaines, rendant possible de nouvelles applications, qui jusqu’alors relevaient du domaine de la science fiction. Ainsi, il est dès lors possible, comme on le voyait à l’époque de manière incrédule dans certains épisodes de la fameuse série “Les Experts”, d’augmenter artificiellement la résolution d’une image pour améliorer sa qualité (cfr Figure 2).</span>
 
-<p align="center">
+<hr><p align="center">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image10.png" style="width: 80%; height:auto;" />
-</p>
-
-<span>Figure 2\. Extrait des experts à Miami.</span> <span class="c14">[https://www.youtube.com/watch?v=IRBo5ZGcyVA](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DIRBo5ZGcyVA&sa=D&ust=1566390330224000)</span>
+<br>
+Figure 2. Extrait des experts à Miami (vidéo <a href="https://www.youtube.com/watch?v=IRBo5ZGcyVA">ici</a>)
+</p><hr>
 
 <span class="c1 c4">Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire une image de meilleure qualité (plus réaliste, et ayant plus de pixels) à partir d’une image d’entrée plus petite (voir Figure 2) :</span>
 
@@ -63,20 +60,20 @@ Pour réaliser cette tâche, le jeu d’entraînement consiste donc en un ensemb
 
 
 
-<p class="fig">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" />
+<hr><p class="fig">
+<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image5.png" style="width:80%";/>
 <br>
 Figure 2. Super-résolution d’image par apprentissage profond - principe de base. L’algorithme est entraîné à générer, à partir d’une image de taille artificiellement réduite, une image de plus grande résolution la plus proche possible de l’image originale.
-</p>
+</p><hr>
 
 
 Ces dernières années, de nouveaux travaux sur cette thématique sont régulièrement proposés, afin d’améliorer les techniques de super-résolution d’images. Ces améliorations se basent fréquemment sur la proposition d’une meilleure architecture de réseau de neurone (c’est-à-dire un modèle plus adapté à la fonction à estimer, i.e. la super-résolution d’image dans ce contexte), sur des jeux de données plus larges, plus adaptés, ou encore sur une manière plus pertinente d’évaluer la qualité d’une image reconstruite. Pour comparer les dernières avancées dans l’état de l’art, des benchmarks basés sur ces mesures et sur un ensemble d’images dédiées sont utilisés. Par exemple, on trouve ici un classement de différents travaux, mesurés en PSNR et en SSIM, sur un ensemble de 14 images de référence:  https://paperswithcode.com/sota/image-super-resolution-on-set14-4x-upscaling
 
-<p class="fig">
+<hr><p class="fig">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image13.png" />
 <br>
-Figure 3\. Réseaux antagonistes génératifs (Generative Adversarial Networks - GAN). Le générateur est entraîné à générer une image de grande taille la plus réaliste possible à partir de l’image d’entrée (de petite taille), alors que le discriminateur est entraîné à différencier une image réelle d’une image synthétisée par le générateur. Le premier a donc comme objectif de maximiser l’erreur du deuxième.
-</p>
+Figure 3. Réseaux antagonistes génératifs (Generative Adversarial Networks - GAN). Le générateur est entraîné à générer une image de grande taille la plus réaliste possible à partir de l’image d’entrée (de petite taille), alors que le discriminateur est entraîné à différencier une image réelle d’une image synthétisée par le générateur. Le premier a donc comme objectif de maximiser l’erreur du deuxième.
+</p><hr>
 
 <span>Certains travaux s’appuient sur un nouveau type d’architecture de DNN, particulièrement ingénieuse: les réseaux antagonistes génératifs (Generative Adversarial Networks - GAN, voir Figure 3)</span><sup>[[6]](#ftnt6)</sup><span class="c1 c4">. Un GAN consiste en la mise en compétition de deux modèles distincts: un modèle “génératif” et un modèle “discriminatif”. Le premier est entraîné à reconstruire une image de grande résolution la plus réaliste possible à partir de l’image de faible résolution. Le second est par contre entraîné à partir des images produites par le premier, à déterminer si cette image est réelle ou non. Un mécanisme de feedback permet alors au premier modèle de s’adapter pour tenter de convaincre le mieux possible le deuxième modèle que les images qu’il synthétise sont réelles. Plus précisément, le premier modèle est littéralement optimisé pour maximiser l’erreur du deuxième, en générant des images les plus réalistes possibles. On peut dire en quelque sorte que le premier modèle est entraîné à berner le deuxième, qui lui est entraîné à être de plus en plus perspicace (à ne pas se faire berner).</span>
 
@@ -84,7 +81,7 @@ Figure 3\. Réseaux antagonistes génératifs (Generative Adversarial Networks -
 
 <span>Quelque soit le modèle, l’amélioration d’une image reste cependant une notion en partie subjective puisqu’elle dépend de la perception d’un individu. En outre, la dégradation d’une image lors de son acquisition dépend également du capteur utilisé, et selon le type de dégradation du capteur, différents modèles peuvent s’avérer plus adaptés que d’autres</span> <span class="c16 c7">[[1]](https://www.google.com/url?q=https://paperpile.com/c/OM3Y77/dG6f&sa=D&ust=1566390330230000)</span><span>. Pour tenter de répondre à cette subjectivité, une mesure basée sur l’opinion moyenne de différentes personnes (“Mean Opinion Score” - MOS) est parfois utilisée. En l’occurrence, les méthodes basées sur les GANs ont des résultats particulièrement bons selon cette mesure</span> <span class="c16 c7">[[2]](https://www.google.com/url?q=https://paperpile.com/c/OM3Y77/iO8r&sa=D&ust=1566390330230000)</span><span>.</span>
 
-<span class="c1 c4"></span>
+
 
 <span>Ainsi, de nombreux travaux se réclament supérieurs aux autres, sous couvert d’un benchmark bien précis et selon une mesure bien précise à laquelle leur modèle est plus adapté. Par exemple, Yu et al. (2018)</span> <span class="c16 c7">[[3]](https://www.google.com/url?q=https://paperpile.com/c/OM3Y77/QmCt&sa=D&ust=1566390330230000)</span><span> indiquent sur leur répertoire github</span><sup>[[7]](#ftnt7)</sup><span>qu’ils ont gagné la compétition NTIRE 2018</span> <span class="c16 c7">[[4]](https://www.google.com/url?q=https://paperpile.com/c/OM3Y77/a4re&sa=D&ust=1566390330231000)</span><span>. Mais d’autre part, Haris et al. (2018)</span> <span class="c16 c7">[[5]](https://www.google.com/url?q=https://paperpile.com/c/OM3Y77/Uq6k&sa=D&ust=1566390330231000)</span><span> indiquent sur leur propre répertoire github</span><sup>[[8]](#ftnt8)</sup><span>avoir remporté la même compétition, ainsi qu’une autre, la PIRM 2018</span> <span class="c16 c7">[[6]](https://www.google.com/url?q=https://paperpile.com/c/OM3Y77/7Jfw&sa=D&ust=1566390330231000)</span><span>... Cette dernière aurait cependant été également remportée par Wang et al. (2019)</span> <span class="c16 c7">[[7]](https://www.google.com/url?q=https://paperpile.com/c/OM3Y77/66jd&sa=D&ust=1566390330232000)</span><span> comme ils le revendiquent également sur leur répertoire github.</span><sup>[[9]](#ftnt9)</sup><span class="c1 c4"> Bien sûr, chaque équipe a en réalité remporté une discipline spécifique, de la même manière que Kevin Borlée peut remporter la course au 400m mais être dernier au 100m haie aux mêmes Jeux Olympiques.</span>
 
@@ -119,30 +116,33 @@ https://colab.research.google.com/github/titsitits/Test_images_superresolution/b
 
 <span>L’amélioration la plus flagrante (de mon point de vue subjectif) a été obtenue sur un zoom sur un portrait, permettant notamment de reproduire une image d’oeil plutôt réaliste (voir Figure 4). On peut également remarquer que le contour des yeux, le sourcil et les cheveux semblent réalistes. Le meilleur résultat a été obtenu (selon moi) avec ESRGAN, qui se trouve être justement le premier dans plusieurs classement de méthodes sur le site</span> <span class="c14">[paperswithcode](https://www.google.com/url?q=https://paperswithcode.com/task/image-super-resolution&sa=D&ust=1566390330239000)</span><span> (voir Figure 5)</span><span class="c1 c4">.</span>
 
+<hr>
 <p class="fig">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width: 45%; object-fit: contain;"/>
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png" style="width: 45%; object-fit: contain;" />
 <br>
-Figure 4. Exemple de super-résolution d’image, obtenu avec ESRGAN.</p>
+Figure 4. Exemple de super-résolution d’image, obtenu avec ESRGAN.</p><hr>
 
 
 
-<p class="fig">
+
+
+<hr><p class="fig">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image7.png" style="width: 100%; object-fit: contain;"/>
 <br>
 Figure 5. Etat de l’art recensé sur <a href="https://paperswithcode.com/task/image-super-resolution">paperswithcode.com</a>. SRGAN + Residual-in-Rseidual Dense Block (ESRGAN) se retrouve à la première place sur la plupart des benchmarks.
-</p>
+</p><hr>
 
 A l’inverse, de nombreux exemples moins concluants ont été obtenus avec chaque algorithmes, comme on peut le voir à la Figure 6\. L’ensemble des résultats peut être vu (ou regénéré) à partir du <span class="c14">[notebook colab](https://www.google.com/url?q=https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb&sa=D&ust=1566390330242000)</span><span class="c1 c4"> fourni avec cet article.</span>
 
-<p class="fig">
+<hr><p class="fig">
  <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image11.png" style="width: 40%" />  
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image9.png" style="width: 40%" />
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image6.png" style="width: 40%; object-fit: contain;" />  
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image12.png" style="width: 40%; object-fit: contain;" />
 <br>
-Figure 6\. Autres exemples de super-résolution d’image avec ESRGAN.<sup>[[10]](#ftnt10)</sup> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.
-</p>
+Figure 6. Autres exemples de super-résolution d’image avec ESRGAN.<sup>[[10]](#ftnt10)</sup> L’algorithme semble ajouter du bruit sur certaines zones de l’image de manière parfois peu réaliste.
+</p><hr>
 
 # <span class="c4 c12 c21">Verdict</span>
 
