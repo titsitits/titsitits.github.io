@@ -7,8 +7,7 @@
 #### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
 <p class=fig>
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image4.png" style="width:40%;" />
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image8.png"style="width:40%;" />
+<img src="https://titsitits.github.io/super_resolution/images/super_res.png" />
 </p>
 
 ### Projects
