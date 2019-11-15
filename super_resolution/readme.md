@@ -29,6 +29,7 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 
 <hr><p class="fig">
 <img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image3.png" style="width:80%;" />
+<br>
 Figure 1. Lien entre un réseau de neurone artificiel et le cerveau. Le modèle est constitué d’un ensemble de noeuds (les neurones) dotés de plusieurs entrées sur lesquelles est appliquée une fonction généralement non-linéaire, et reliés entre eux par des connexions dont les poids s’adaptent grâce à un algorithme d’optimisation. De la même manière, le cerveau est constitué de neurones reliés entre eux par des synapses dont les courants électriques et les connexions s’adaptent continuellement, et plus particulièrement lors de l’apprentissage de tâches complexes comme apprendre à jouer d’un instrument de musique.<sup id='#ftnt2'>[[2]]</sup>
 </p><hr>
 
