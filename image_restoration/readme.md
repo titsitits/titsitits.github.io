@@ -2,11 +2,9 @@
 
 ##### Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois
 
-Mickaël Tits - CETIC - 05/11/2019
+<h6>Mickaël Tits - CETIC - 05/11/2019</h6>
 
-
-
-(ON-GOING WORK!)
+<h6>(ON-GOING WORK!)</h6>
 
 
 
