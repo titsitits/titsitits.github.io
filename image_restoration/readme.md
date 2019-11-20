@@ -218,8 +218,6 @@ L'implémentation actuelle du premier modèle (*Zhang2016*) est basée sur une a
 
 La figure suivante montre une comparaison des deux algorithmes sélectionnés. L'utilisation directe de l'implémentation de Zhang2016 présente une limitation importante: le résultat obtenu est une image de taille 256x256, quelque soit la taille de l'image originale. ainsi, dans la figure présentée ci-dessous, nous avons dû redimensionner le résultat pour obtenir la taille d'origine. Néanmoins, une partie de l'information a été perdue, résultant en une image moins nette. 
 
-Concernant les couleurs, la comparaison ne peut être que subjective. Néanmoins, Zhang2016 semble donner des résultats limités, et laisse à certains endroits des zones encore grisâtres (voir par exemple le bras gauche de Zéphirin Gillain, première image, ainsi que la tête et l'épaule droite de Pol Goffaux, troisième image). En outre, DeOldify est également 
-
 <hr>
 <p class="fig" style="text-align:center;">
 <a href="https://titsitits.github.io/image_restoration/images/colorization_gillain.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/colorization_gillain.png" style="width:100%; height:auto;"/></a>
@@ -230,6 +228,9 @@ Figure 10 - Comparaison de méthodes de réduction de rayures (crédits image: J
 </p>
 <hr>
 
+Concernant les couleurs, la comparaison ne peut être que subjective. Néanmoins, Zhang2016 semble donner des résultats limités, et laisse à certains endroits des zones encore grisâtres (voir par exemple le bras gauche de Zéphirin Gillain, première image, ainsi que la tête et l'épaule droite de Pol Goffaux, troisième image). En tout subjectivité, les résultats de DeOldify sont impressionnants, bien qu'imparfaits. On peut remarquer la couleure légèrement bleutée de la jambe droite de Zéphirin Gillain (premier boxeur), et le fond verdâtre teinté de rouge dans la deuxième image (NDLR, pour sa défense, je n'ai aucune idée de la couleur réelle non-plus).
+
+En outre, DeOldify a également l'avantage d'être configurable: un facteur de rendu permet d'obtenir des couleurs plus ou moins vives (souvent au dépend du réalisme).
 
 ### Super-résolution
 
