@@ -6,7 +6,8 @@
 #### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
 <p class="fig">
-<a href="http://titsitits.github.io/super_resolution"><img src="https://titsitits.github.io/super_resolution/images/super_res.png" /></a>
+<a href="http://titsitits.github.io/super_resolution">
+<img class="fig" src="https://titsitits.github.io/super_resolution/images/super_res.png" /></a>
 </p>
 
 ### Projects

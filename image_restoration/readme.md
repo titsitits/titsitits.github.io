@@ -1,11 +1,7 @@
 <h1 class="centered">Restauration d'image par réseaux de neurones profonds</h1>
-
 <h3 class="title">Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois</h3>
-
 <h4 class="centered">Mickaël Tits - CETIC - 05/11/2019</h4>
-
 <h6 class="title">(ON-GOING WORK!)</h6>
-
 
 
 ## Introduction
@@ -17,12 +13,13 @@ Une collaboration avec une organisation culturelle belge, le [Rif tout dju](http
 A titre d'exemple, voici quelques images de champions de boxe belges originaires de Nivelles, fournies par Jean Vandendries comme échantillons de test pour ce projet.
 
 <hr>
-<p style="text-align:center;"><a href="https://titsitits.github.io/image_restoration/images/boxeurs.png">
-<img src="https://titsitits.github.io/image_restoration/images/boxeurs.png" style="width:100%; height:auto;"/></a>
+<p class="fig"><a href="https://titsitits.github.io/image_restoration/images/boxeurs.png">
+<img class="fig" src="https://titsitits.github.io/image_restoration/images/boxeurs.png"/></a>
 <br>
-Boxeurs belges (crédits: Jean Vandendries)
+Figure 1 - Boxeurs belges (crédits: Jean Vandendries)
 </p>
 <hr>
+
 
 Ces images présentent de nombreux défauts, dont quatre ont été retenus en particulier:
 
@@ -202,7 +199,17 @@ Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendr
 
 ### Colorisation
 
+La colorisation ne permet pas de supprimer des artéfacts, mais bien d'ajouter de l'information en transformant une image à un seul canal (monochrome) en une image à trois canaux (RGB, i.e. rouge, vert et bleu), permettant  d'ajouter de la couleur aux images.
 
+Trois techniques de colorisation ont été trouvées dans la littérature, proposant une implémentation open-source en python :
+
+1. [Zhang2016 - Real-Time User-Guided Image Colorization with Learned Deep Priors (SIGGRAPH 2017)](https://github.com/richzhang/colorization-pytorch)
+2.  [Deep Koalarization: Image Colorization using CNNs and Inception-ResNet-v2 (arXiv 2017)](https://github.com/baldassarreFe/deep-koalarization) 
+3. [DeOlfidy (NoGAN) - A Deep Learning based project for colorizing and restoring old images (and video!)          (github 2018)](https://github.com/jantic/DeOldify)
+
+La deuxième ne fournit pas de modèle pré-entraîné, et n'est donc pas directement utilisable (elle ne remplit donc pas directement nos critères de sélection). Elle a donc temporairement été exclue. 
+
+L'implémentation actuelle du premier modèle (*Zhang2016*) est basée sur une ancienne version de Python (v2), ce qui ne le rend donc pas directement compatible avec les autres, toutes implémentées en Python v3. Elle a néanmoins été testée pour comparaison avec la méthode *DeOldify*. Ce dernier modèle, plus récent, se base sur une architecture de réseau neuronal plus récente, appelée [Réseaux Antagornistes Génératifs](https://fr.wikipedia.org/wiki/R%C3%A9seaux_antagonistes_g%C3%A9n%C3%A9ratifs) (Generative Adversarial Networks - GAN). Plus d'informations sur cette architecture peut être lue dans l'article sur la super-résolution [suivant]().
 
 <hr>
 <p style="text-align:center;">
