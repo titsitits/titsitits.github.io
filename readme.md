@@ -1,12 +1,11 @@
 <h1 class="centered">Welcome to my work - Mickaël Tits @ Cetic</h1>
-
 ## Pages
 
 ### Blog posts
 
 #### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
-<p class=fig>
+<p class="fig">
 <a href="http://titsitits.github.io/super_resolution"><img src="https://titsitits.github.io/super_resolution/images/super_res.png" />
 </p></a>
 
