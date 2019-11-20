@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /
 ---
 
 <h1 class="centered">Welcome to my work - Mickaël Tits @ Cetic</h1>
