@@ -1,2 +1,9 @@
 theme: jekyll-theme-slate
 title: Mickaël Tits - Projects @ CETIC
+markdown: kramdown
+plugins:
+  - jekyll-readme-index
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: true

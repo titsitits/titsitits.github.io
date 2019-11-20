@@ -1,0 +1,16 @@
+_site
+.sass-cache
+Gemfile.lock
+*.gem
+.github/
+.jekyll-cache/
+jekyll-theme-slate.gemspec
+Gemfile
+
+assets/images/sprite_download.png
+assets/images/bg_hr.png
+assets/images/icon_download.png
+assets/css/style.scss
+_sass/jekyll-theme-slate.scss
+assets/images/blacktocat.png
+_sass/rouge-github.scss

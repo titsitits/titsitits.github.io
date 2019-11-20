@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <h1 class="centered">Welcome to my work - Mickaël Tits @ Cetic</h1>
 ## Pages
 
