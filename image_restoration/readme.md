@@ -3,7 +3,6 @@
 <h4 class="centered">Mickaël Tits - CETIC - 05/11/2019</h4>
 <h6 class="title">(ON-GOING WORK!)</h6>
 
-
 ## Introduction
 
 Dans le cadre du projet DigiMIR, projet FEDER mené en collaboration entre le [CETIC](https://cetic.be) et [Numediart](https://numediart.org/), nous avons testé et comparé différentes techniques de restauration d'image basées sur de l'intelligence artificielle, et plus particulièrement sur les réseaux de neurones profonds. Ces techniques, bien qu'encore imparfaites et en plein développement, ont un intérêt réel dans différents contextes nécessitant d'améliorer la qualité d'une image. Les applications peuvent aller de la vidéo-surveillance à l'histoire et l'art, en passant par l'imagerie médicale ou satellite. De manière générale, toute image de faible qualité peut bénéficier de techniques de restauration d'image, que ce soit dû à la détérioration d'un support par le temps, ou la qualité d'acquisition d'origine (capteur low-cost ou âgé, contraintes spécifiques à un canal d'acquisition, e.g. images infrarouges, satellites, IRM), ou encore la compression numérique.
@@ -19,6 +18,7 @@ A titre d'exemple, voici quelques images de champions de boxe belges originaires
 Figure 1 - Boxeurs belges (crédits: Jean Vandendries)
 </p>
 <hr>
+
 
 
 Ces images présentent de nombreux défauts, dont quatre ont été retenus en particulier:
@@ -68,29 +68,31 @@ Chaque implémentation d'une technique est testée et validée différemment par
 Le site paperswithcode.com référence de nombreux classements pour chacune des techniques évoquées plus haut. Pour la super-résolution par exemple, [six classements](https://paperswithcode.com/task/image-super-resolution) sont actuellement référencés:
 
 <hr>
-<p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/image-20191105164649118.png" style="width:100%; height:auto;"/>
+<p class="fig">
+<img class="fig" src="https://titsitits.github.io/image_restoration/image-20191105164649118.png" style="width:100%; height:auto;"/>
 <br>
-Classements en super-résolution d'image - <a href="https://paperswithcode.com/task/image-super-resolution">paperwithcode.com</a> (05/11/2019)
+Figure 2 - Classements en super-résolution d'image - <a href="https://paperswithcode.com/task/image-super-resolution">paperwithcode.com</a> (05/11/2019)
 </p>
 <hr>
+
 
 Le classement comparant le plus grand nombre d'algorithmes est actuellement le "Set5 - 4x upscaling", comparant les résultats sur seulement cinq images spécifiques (voir figure suivante). Cependant, les performances sur un ensemble de cinq images ne garantissent absolument pas l'efficacité sur d'autres images aux caractéristiques potentiellement très différentes. De plus, des contextes d'application typiques nécessitant de la restauration d'image (tel que des images prises par des capteurs low-cost, par des smartphones, de images nocturnes de vidéosurveillance, ou encore images historiques) ne sont pris en compte dans aucun de ces classements.
 
 
 
-<hr><p style="text-align:center;">
-<img src="http://vllab.ucmerced.edu/wlai24/LapSRN/images/Set5.jpg" style="width:100%; height:auto;"/>
+<hr><p class="fig">
+<img class="fig" src="http://vllab.ucmerced.edu/wlai24/LapSRN/images/Set5.jpg" style="width:100%; height:auto;"/>
 <br>
-Jeu de données de test Set5. (source: <a href="http://vllab.ucmerced.edu/wlai24/LapSRN/">http://vllab.ucmerced.edu/wlai24/LapSRN/</a> )
+Figure 3 - Jeu de données de test Set5. (source: <a href="http://vllab.ucmerced.edu/wlai24/LapSRN/">http://vllab.ucmerced.edu/wlai24/LapSRN/</a> )
 </p><hr>
 
-<hr><p style="text-align:center;">
-<img src="https://titsitits.github.io/image_restoration/image-20191105164930156.png" style="width:100%; height:auto;"/>
+<hr><p class="fig">
+<img class="fig" src="https://titsitits.github.io/image_restoration/image-20191105164930156.png" style="width:100%; height:auto;"/>
 <br>
-Classement "Set5 - 4x upscaling" - <a href="https://paperswithcode.com/sota/image-super-resolution-on-set5-4x-upscaling">paperwithcode.com</a> (05/11/2019)
+Figure 4 - Classement "Set5 - 4x upscaling" - <a href="https://paperswithcode.com/sota/image-super-resolution-on-set5-4x-upscaling">paperwithcode.com</a> (05/11/2019)
 </p>
 <hr>
+
 
 
 
@@ -121,20 +123,21 @@ Ces classements se distinguent par les jeux d'images de test utilisés ( BSD ou 
 Parmi les classements basés sur BSD, les classements [BSD68 sigma50](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma50), [BSD68 sigma25](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma25) et [BSD68 sigma15](https://paperswithcode.com/sota/image-denoising-on-bsd68-sigma15) ont été retenus, car ils contiennent un plus large nombre d'algorithmes testés. Les deux derniers ont été testé sur des images avec une simulation de bruit plus "réaliste" (*sigma = 25* et *sigma = 15* respectivement), comme le montrent les exemples ci-dessous.
 
 <hr>
-<p style="text-align:center;">
-<a href="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png"><img src="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png" style="width:100%; height:auto;"/></a>
+<p class="fig">
+<a href="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/noisy_annefranck.png" style="width:100%; height:auto;"/></a>
 <br>
-Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
+Figure 5 - Différents bruits gaussiens simulés dans une image (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
 </p>
 <hr>
 
 <hr>
-<p style="text-align:center;">
-<a href="https://titsitits.github.io/image_restoration/images/noisy.png"><img src="https://titsitits.github.io/image_restoration/images/noisy.png" style="width:100%; height:auto;"/></a>
+<p class="fig">
+<a href="https://titsitits.github.io/image_restoration/images/noisy.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/noisy.png" style="width:100%; height:auto;"/></a>
 <br>
-Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
+Figure 6 - Différents bruits gaussiens simulés dans une image (crédits image: Jean Vandendries)
 </p>
 <hr>
+
 
 Sur ces deux derniers classements, les seuls travaux proposant une licence libre de droits sont :
 
@@ -147,20 +150,21 @@ D'après les places occupées par ces deux méthodes dans le classement, NLRN de
 (NDLR: vous pouvez visualiser une version plus grande des images en cliquant dessus)
 
 <hr>
-<p style="text-align:center;">
-<a href="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png"><img src="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png" style="width:100%; height:auto;"/></a>
+<p class="fig">
+<a href="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/denoising_annefranck.png" style="width:100%; height:auto;"/></a>
 <br>
-Comparaison de méthodes de réduction de bruit gaussien (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
+Figure 7 - Comparaison de méthodes de réduction de bruit gaussien (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AnneFrank1940_crop.jpg/524px-AnneFrank1940_crop.jpg">ici</a>)
 </p>
 <hr>
 
 <hr>
-<p style="text-align:center;">
-<a href="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png"><img src="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png" style="width:100%; height:auto;"/></a>
+<p class="fig">
+<a href="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/goffaux_denoising.png" style="width:100%; height:auto;"/></a>
 <br>
-Comparaison de méthodes de réduction de bruit gaussien (crédits image: Jean Vandendries)
+Figure 8 - Comparaison de méthodes de réduction de bruit gaussien (crédits image: Jean Vandendries)
 </p>
 <hr>
+
 
 Si seul le critère de qualité du résultat est pris en compte, NLRN semble donc plus efficace. Le résultats semble particulièrement bon sur l'image d'Anne Franck. Le résultat semble moins bon sur l'image de test, notamment à cause de l'apparition de certaines textures irréalistes dans les images résultantes. Le résultat de DNCNN semble caractérisé par une perte nette de relief, due à un lissage excessif.
 
@@ -188,14 +192,15 @@ Lors des différents tests que nous avons réalisés, nous avons pu constater qu
 D'un point de vue coût computationnel, WDNN est très léger en comparaison à NLRN (réduction de bruit). L'ordre de grandeur pour une image de taille moyenne (500x500) est de 0.1 seconde, ce qui rend adéquate une utilisation multiple de cette technique.
 
 <hr>
-<p style="text-align:center;">
-<a href="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png"><img src="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png" style="width:100%; height:auto;"/></a>
-<a href="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png"><img src="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png" style="width:100%; height:auto;"/></a>
-<a href="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png"><img src="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png" style="width:100%; height:auto;"/></a>
+<p class="fig">
+<a href="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/gillain_stripe_removal.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/robaeys_stripe_removal.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/goffaux_stripe_removal.png" style="width:100%; height:auto;"/></a>
 <br>
-Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendries).
+Figure 9 - Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendries).
 </p>
 <hr>
+
 
 ### Colorisation
 
@@ -211,15 +216,20 @@ La deuxième ne fournit pas de modèle pré-entraîné, et n'est donc pas direct
 
 L'implémentation actuelle du premier modèle (*Zhang2016*) est basée sur une ancienne version de Python (v2), ce qui ne le rend donc pas directement compatible avec les autres, toutes implémentées en Python v3. Elle a néanmoins été testée pour comparaison avec la méthode *DeOldify*. Ce dernier modèle, plus récent, se base sur une architecture de réseau neuronal plus récente, appelée [Réseaux Antagornistes Génératifs](https://fr.wikipedia.org/wiki/R%C3%A9seaux_antagonistes_g%C3%A9n%C3%A9ratifs) (Generative Adversarial Networks - GAN). Plus d'informations sur cette architecture peut être lue dans l'article sur la super-résolution [suivant]().
 
+La figure suivante montre une comparaison des deux algorithmes sélectionnés. L'utilisation directe de l'implémentation de Zhang2016 présente une limitation importante: le résultat obtenu est une image de taille 256x256, quelque soit la taille de l'image originale. ainsi, dans la figure présentée ci-dessous, nous avons dû redimensionner le résultat pour obtenir la taille d'origine. Néanmoins, une partie de l'information a été perdue, résultant en une image moins nette. 
+
+Concernant les couleurs, la comparaison ne peut être que subjective. Néanmoins, Zhang2016 semble donner des résultats limités, et laisse à certains endroits des zones encore grisâtres (voir par exemple le bras gauche de Zéphirin Gillain, première image, ainsi que la tête et l'épaule droite de Pol Goffaux, troisième image). En outre, DeOldify est également 
+
 <hr>
-<p style="text-align:center;">
-<a href="https://titsitits.github.io/image_restoration/images/colorization_gillain.png"><img src="https://titsitits.github.io/image_restoration/images/colorization_gillain.png" style="width:100%; height:auto;"/></a>
-<a href="https://titsitits.github.io/image_restoration/images/colorization_robaeys.png"><img src="https://titsitits.github.io/image_restoration/images/colorization_robaeys.png" style="width:100%; height:auto;"/></a>
-<a href="https://titsitits.github.io/image_restoration/images/colorization_goffaux.png"><img src="https://titsitits.github.io/image_restoration/images/colorization_goffaux.png" style="width:100%; height:auto;"/></a>
+<p class="fig" style="text-align:center;">
+<a href="https://titsitits.github.io/image_restoration/images/colorization_gillain.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/colorization_gillain.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/colorization_robaeys.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/colorization_robaeys.png" style="width:100%; height:auto;"/></a>
+<a href="https://titsitits.github.io/image_restoration/images/colorization_goffaux.png"><img class="fig" src="https://titsitits.github.io/image_restoration/images/colorization_goffaux.png" style="width:100%; height:auto;"/></a>
 <br>
-Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendries).
+Figure 10 - Comparaison de méthodes de réduction de rayures (crédits image: Jean Vandendries).
 </p>
 <hr>
+
 
 ### Super-résolution
 
