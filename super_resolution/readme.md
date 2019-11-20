@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <h1 class="centered">White Paper - Super-résolution d’images par intelligence artificielle</h1>
 <h2 class="centered">Fiction ou Révolution ?</h2>
 <hr>
