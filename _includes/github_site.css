@@ -20,6 +20,7 @@ ul {text-align: left;}
 
 ol {text-align: left;}
 
+/* this class should be applied both on paragraph tag <p> including images, and image tag <img> itself */
 .fig {
 width: 100%;
 text-align: center;
@@ -27,4 +28,11 @@ font-size:80%;
 text-transform:uppercase;
 height:auto;
 object-fit: contain;
+}
+
+/* default iamges are centered, auto-adjusted to paragraph width */
+img {
+height:auto;
+object-fit: contain;	
+width: 100%;
 }
