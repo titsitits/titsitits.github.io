@@ -14,7 +14,7 @@
 #### [Open-image-restoration: A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](http://titsitits.github.io/open-image-restoration)
 
 <p class="fig">
-<img src="https://raw.githubusercontent.com/titsitits/open-image-restoration/master/Anne-Franck.png" />
+<img src="https://raw.githubusercontent.com/titsitits/open-image-restoration/master/Anne-Franck.png" class="fig"/>
 </p>
 
 This project gathers together and packages various image restoration techniques that follow various criteria:
