@@ -1,0 +1,30 @@
+.title   {text-align: center; color: gray; }
+
+.centered {text-align: center;}
+
+body {text-align: justify;}
+
+h1 {text-align: left;}
+
+h2 {text-align: left;}
+
+h3 {text-align: left;}
+
+h4 {text-align: left;}
+
+h5 {text-align: left;}
+
+h6 {text-align: left;}
+
+ul {text-align: left;}
+
+ol {text-align: left;}
+
+.fig {
+width: 100%;
+text-align: center;
+font-size:80%;
+text-transform:uppercase;
+height:auto;
+object-fit: contain;
+}
