@@ -7,7 +7,7 @@
 
 <p class="fig">
 <a href="http://titsitits.github.io/super_resolution"><img src="https://titsitits.github.io/super_resolution/images/super_res.png" />
-</p></a>
+</p>
 
 ### Projects
 
