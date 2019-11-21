@@ -1,5 +1,5 @@
 ---
-title: Restauration d'image par réseaux de neurones profonds
+page_title: Restauration d'image par réseaux de neurones profonds
 layout: default_with_toc
 heading: |
     <h3 class="title">Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois</h3>

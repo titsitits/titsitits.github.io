@@ -1,6 +1,5 @@
 ---
 layout: default_with_toc
-
 heading: |
     <h1 class="centered">Super-résolution d’images par intelligence artificielle</h1>
     <h4 class="centered" id="no_toc"> <a href="https://www.cetic.be/Mickael-Tits?lang=fr">Mickaël Tits - CETIC asbl</a> - 03/07/2019</h4>
