@@ -1,9 +1,13 @@
-<h1 class="centered">Restauration d'image par réseaux de neurones profonds</h1>
-<h3 class="title">Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois</h3>
-<h4 class="centered">Mickaël Tits - CETIC - 05/11/2019</h4>
-<h6 class="title">(ON-GOING WORK!)</h6>
+---
+title: Restauration d'image par réseaux de neurones profonds
+layout: default_with_toc
+heading: |
+    <h3 class="title">Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois</h3>
+    <h4 class="centered">Mickaël Tits - CETIC - 05/11/2019</h4>
+    <h6 class="title">(ON-GOING WORK!)</h6>
+---
 
-## Introduction
+# Introduction
 
 Dans le cadre du projet DigiMIR, projet FEDER mené en collaboration entre le [CETIC](https://cetic.be) et [Numediart](https://numediart.org/), nous avons testé et comparé différentes techniques de restauration d'image basées sur de l'intelligence artificielle, et plus particulièrement sur les réseaux de neurones profonds. Ces techniques, bien qu'encore imparfaites et en plein développement, ont un intérêt réel dans différents contextes nécessitant d'améliorer la qualité d'une image. Les applications peuvent aller de la vidéo-surveillance à l'histoire et l'art, en passant par l'imagerie médicale ou satellite. De manière générale, toute image de faible qualité peut bénéficier de techniques de restauration d'image, que ce soit dû à la détérioration d'un support par le temps, ou la qualité d'acquisition d'origine (capteur low-cost ou âgé, contraintes spécifiques à un canal d'acquisition, e.g. images infrarouges, satellites, IRM), ou encore la compression numérique.
 
@@ -30,9 +34,9 @@ Ces images présentent de nombreux défauts, dont quatre ont été retenus en pa
 
 Nous avons dès lors testé et comparé différentes techniques basées sur les réseaux neuronaux permettant d'améliorer ces images. Nous avons identifié différents types de techniques, corrigeant chacune un type de défauts, et avons développé un pipeline d'opérations permettant une restauration plus "globale" des images. 
 
-## Un pipeline de techniques de restauration d'image
+# Un pipeline de techniques de restauration d'image
 
-### Des techniques diverses et variées
+## Des techniques diverses et variées
 
 L'état de l'art de la restauration d'image se divise actuellement en différentes techniques distinctes, permettant chacune de corriger un type particulier d'artéfacts indésirables présents dans une image, ou d'inférer artificiellement de l'information supplémentaire à l'image (telle que des couleurs, ou des détails). Dans le cadre du présent projet de recherche, nous nous sommes intéressés, jusqu'à présent, à quatre techniques en particulier:
 
@@ -43,7 +47,7 @@ L'état de l'art de la restauration d'image se divise actuellement en différent
 
 En pratique, une image de faible qualité présente souvent différents types de défauts, et à des degrés divers. Une image historique sera souvent limitée à une échelle de gris, une faible résolution, des artéfacts dus à la détérioration d'un support physique (tel que du papier jauni et écaillé par le temps), et à la numérisation de celui-ci. L'application individuelle des techniques susmentionnées n'aura alors qu'une portée limitée sur les possibilités de restauration de cette image. Afin de restaurer efficacement une image, il est donc nécessaire d'appliquer un ensemble de ces techniques.
 
-### Une mise en série compliquée
+## Une mise en série compliquée
 
 Dans ce projet, nous avons étudié la mise en série de ces différentes techniques, de manière à obtenir une restauration holistique d'une image. Cette mise en série n'est en réalité pas un problème trivial, car l'application d'une technique peut fortement impacter le résultat de la technique subséquente. Dans certains cas, elle peut améliorer le résultat: l'application de la super-résolution sur une image bruitée risque parfois d'augmenter les détails d'un artéfact indésirable, telle qu'une rayure, de la neige ou tout autre type de bruit. Si tel est le cas, l'application préalable d'une technique de réduction du bruit rendra plus efficace la super-résolution. 
 
@@ -51,7 +55,7 @@ L'impact des techniques précédant la colorisation d'une image est particulièr
 
 A l'inverse, l'état de l'art de ces techniques est encore limité et imparfait, et l'application de certaines techniques peut parfois engendrer une perte significative d'information, ou la création de nouveaux artéfacts indésirables. C'est notamment le cas de la réduction de bruit gaussien, qui a souvent tendance à trop "lisser" les images, c'est-à-dire à éliminer une partie de leur texture. Ainsi par exemple, la texture poreuse d'une surface de béton, poussiéreuse d'une terre battue, ou herbeuse d'un gazon peuvent devenir identiquement lisses après application imparfaite de cette technique. Dans ce cas, la colorisation d'un jardin ou d'un mur de briques peuvent résulter en une surface grisâtre sans texture claire. A l'inverse, la super-résolution peut parfois "inventer" des détails peu réalistes, rendant la texture tout aussi ininterprétable. Dès lors, l'ajustement minutieux de la séquence et des paramètres d'un pipeline de techniques de restauration d'image devient important. Malheureusement, il est difficile, voire impossible, d'identifier un pipeline d'opérations idéal, car les résultats peuvent varier selon les caractéristiques et les défauts d'une image.
 
-### Des outils hétérogènes et incompatibles
+## Des outils hétérogènes et incompatibles
 
 La littérature informatique se distingue souvent par sa vaste hétérogénéité. En effet, il possible d'implémenter un même algorithme avec de nombreux outils différents, souvent incompatibles entre eux. Différents langages de programmation, différents frameworks ou librairies, ou encore différentes versions d'une librairies peuvent être utilisés, rendant difficile l'intégration dans un même programme de techniques dont les implémentations sont incompatibles entre elles. 
 
@@ -61,7 +65,7 @@ Etant donné le côté fermé d'un langage comme Matlab (programme payant, close
 
 D'autres outils sont parfois utilisés pour optimiser les performances computationnelles, permettant ainsi un traitement plus rapide des images. C'est notamment le cas des frameworks [Caffe](http://caffe.berkeleyvision.org/) et [Torch](http://torch.ch/), utilisés par exemples dans les travaux suivants: [ Image Super-Resolution for Anime-Style Art](https://github.com/nagadomi/waifu2x), [ Residual Dense Network for Image Super-Resolution  (CVPR 2018)](https://github.com/yulunzhang/RDN).
 
-### Des performances hétérogènes et peu réalistes
+## Des performances hétérogènes et peu réalistes
 
 Chaque implémentation d'une technique est testée et validée différemment par son développeur. En général, les images ayant obtenus les meilleurs résultats sont utilisées pour présenter le travail. Afin de rendre plus objective la comparaison des performances des algorithmes, divers classements, basés sur des mesures standards et sur des jeux de données standards sont utilisés. Cependant, ceux-ci se limitent également à un ensemble restreint d'images d'un type particulier. On retrouve par exemple des classements sur les jeux de données [URBAN100](https://paperswithcode.com/sota/image-super-resolution-on-urban100-4x) (100 images de paysages urbains), et [Manga109](https://paperswithcode.com/sota/image-super-resolution-on-manga109-4x) (109 images d'animation). Les jeux d'images de test habituels peuvent être visualisés [ici](http://vllab.ucmerced.edu/wlai24/LapSRN/).
 
@@ -98,15 +102,15 @@ Figure 4 - Classement "Set5 - 4x upscaling" - <a href="https://paperswithcode.co
 
 Pour terminer, bien que la qualité d'une image est un critère subjectif, des mesures objectives doivent être utilisées non-seulement pour entraîner les algorithmes (par apprentissage profond), mais également pour les comparer de manière objective. Néanmoins, ces mesures ne reflètent pas la réalité, car elles sont généralement basées sur une comparaison d'une image de bonne qualité à une image de qualité artificiellement réduite. Plus de détails sur l'entraînement des algorithmes par apprentissage profond, et des mesures de qualité de reconstruction peuvent se trouver [ici](https://titsitits.github.io/super_resolution/).
 
-### Des licences hétérogènes et parfois contraignantes
+## Des licences hétérogènes et parfois contraignantes
 
 Outre les contraintes dus aux outils et à la variabilité des performances, la réutilisation de travaux de l'état de l'art peut être soumise à des contraintes légales, régulés par des termes de licence, définissant les droits de réutilisation et de modification d'un projet. Certaines licences rendent des projets "libres de droits", ce qui signifie que n'importe qui peut les réutiliser, les modifier, peu importe le contexte. Les licences libres de droits les plus couramment utilisées pour des programmes informatiques sont [MIT](https://en.wikipedia.org/wiki/MIT_License), [Apache](https://en.wikipedia.org/wiki/Apache_License) et [GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License). D'autres licences permettent la réutilisation en ajoutant certaines contraintes, comme une utilisation non-commerciale (e.g.: [CC-BY-NC](https://creativecommons.org/licenses/by-nc/2.0/)). Certains projets ont aussi une licence ad-hoc (personnalisée), comme par exemple [Neural Nearest Neighbors Networks (NeurIPS, 2018)](https://github.com/visinf/n3net/blob/master/LICENSE.md), qui interdit également une utilisation commerciale de leur code. Enfin, d'autre projets n'incluent simplement pas de licence, les rendant ainsi simplement visible publiquement, mais concrètement inutilisables dans le développement d'un nouveau projet sous licence.
 
-### Un domaine en pleine expansion
+## Un domaine en pleine expansion
 
 L'utilisation des réseaux de neurones profonds dans la recherche, et en particulier dans le traitement d'images est actuellement un champ de recherche particulièrement en mouvement. L'état de l'art évolue rapidement. A titre d'exemple, lors de la phase de ce projet portant sur la comparaison d'algorithmes de super-résolution (voir [ici](https://titsitits.github.io/super_resolution/)), l'algorithme [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks (ECCV, 2018)](https://paperswithcode.com/paper/esrgan-enhanced-super-resolution-generative) était premier dans la plupart des classements. Ses performances semblent néanmoins avoir été surpassées depuis, par une autre algorithme: [Second-Order Attention Network for Single Image Super-Resolution (CVPR 2019)](https://paperswithcode.com/paper/second-order-attention-network-for-single). Cependant, ce dernier n'a a l'heure actuelle aucune licence spécifiée (son utilisation n'est donc par officiellement libre de droit).
 
-## Une sélection d'algorithmes libres de droits, utilisables, et compatibles
+# Une sélection d'algorithmes libres de droits, utilisables, et compatibles
 
 Dans ce projet, nous avons tenté d'obtenir un compromis entre un pipeline de restauration d'images à la fois générique et efficace. Un ensemble d'algorithmes implémentant différentes techniques de restauration d'image ont été sélectionnés de manière à fonctionner ensemble dans un même programme, à donner un résultat le plus robuste et générique possible, et réutilisable en pratique (i.e. libre de droits, et facile à mettre en œuvre).
 
@@ -114,7 +118,7 @@ Ainsi, pour chacune des quatre techniques évoquées plus haut, une analyse comp
 
 La plupart des algorithmes ont été identifiés par une recherche systématique sur le site [paperswithcode.com](https://www.paperswithcode.com) dans les catégories respectives, ou directement sur le site [github.com](https://www.github.com), le site d'hébergement de référence de codes publics.
 
-### Réduction de bruit gaussien
+## Réduction de bruit gaussien
 
 De nombreux classements concernant la réduction de bruit sont accessibles sur: [https://paperswithcode.com/task/image-denoising](https://paperswithcode.com/task/image-denoising)
 
@@ -170,7 +174,7 @@ Si seul le critère de qualité du résultat est pris en compte, NLRN semble don
 
 Bien que la qualité de restauration soit le critère principal, le coût computationnel (ou le temps de calcul) d'une technique est un critère important en pratique, essentiellement pour une application sur un grand nombre d'image, ou en temps réel (cas plutôt rencontré dans d'autres contextes, tels que la surveillance vidéo ou satellite). Ainsi, d'un point de vue rapidité de calcul, le traitement a mis environ 4 secondes pour DNCNN, et 380 pour NLRN, pour une version d'image de petite taille (349x400 pixels). Bien sûr, l'algorithme peut être paramétré de manière à diminuer ce temps de traitement, au détriment de la qualité du résultat. Néanmoins, NLRN est particulièrement lent, en comparaison à DNCNN, et en comparaison avec les autres techniques dont nous parlons plus bas.
 
-### Réduction des rayures (stripe noise)
+## Réduction des rayures (stripe noise)
 
 La réduction des rayures dans une image est une technique de restauration d'image plus rarement abordée dans la littérature. Selon le contexte, c'est pourtant une technique qui peut parfois être particulièrement efficace. Différentes implémentations de techniques de réductions de rayures ont été trouvées dans la littérature:
 
@@ -202,7 +206,7 @@ Figure 9 - Comparaison de méthodes de réduction de rayures (crédits image: Je
 <hr>
 
 
-### Colorisation
+## Colorisation
 
 La colorisation ne permet pas de supprimer des artéfacts, mais bien d'ajouter de l'information en transformant une image à un seul canal (monochrome) en une image à trois canaux (RGB, i.e. rouge, vert et bleu), permettant  d'ajouter de la couleur aux images.
 
@@ -232,5 +236,5 @@ Concernant les couleurs, la comparaison ne peut être que subjective. Néanmoins
 
 En outre, DeOldify a également l'avantage d'être configurable: un facteur de rendu permet d'obtenir des couleurs plus ou moins vives (souvent au dépend du réalisme).
 
-### Super-résolution
+## Super-résolution
 

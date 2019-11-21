@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Welcome to my work - Mickaël Tits @ Cetic<
+description: Welcome to my work
 ---
 
-<!--h1 class="centered">Welcome to my work - Mickaël Tits @ Cetic</h1-->
+<h1 class="centered">Welcome to my work - Mickaël Tits @ Cetic</h1>
 ## Pages
 
 ### Blog posts
