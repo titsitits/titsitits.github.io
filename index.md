@@ -1,23 +1,30 @@
 ---
-layout: default
+layout: default_with_toc
 description: Welcome to my work
+heading: |
+    <h1 class="title1">Mickaël Tits</h1>
+    <h4 class="title2">Senior Research Engineer</h4>
+    <h5 class="title2">Data Science Department</h5>
+    <p class="fig">
+    <a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="width:200px;"></a>
+    </p>
 ---
 
-<h1 class="centered">Welcome to my work - Mickaël Tits @ Cetic</h1>
-## Pages
 
-### Blog posts
+# Pages
 
-#### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
+## Blog posts
+
+### [Une comparaison de différents algorithmes de super-résolution d'image par Deep Learning (Notebook Colab associé)](http://titsitits.github.io/super_resolution)
 
 <p class="fig">
 <a href="http://titsitits.github.io/super_resolution">
 <img class="fig" src="https://titsitits.github.io/super_resolution/images/super_res.png" /></a>
 </p>
 
-### Projects
+## Projects
 
-#### [Open-image-restoration: A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](http://titsitits.github.io/open-image-restoration)
+### [Open-image-restoration: A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](http://titsitits.github.io/open-image-restoration)
 
 <p class="fig">
 <img src="https://raw.githubusercontent.com/titsitits/open-image-restoration/master/Anne-Franck.png" class="fig"/>
@@ -29,9 +36,9 @@ This project gathers together and packages various image restoration techniques 
 * Usable (a pretrained model is available, and the code does not need painfull<sup>1</sup> dependencies)
 * Python implementation (easier to use together, to share, and especially to use in Google Colab).
 
-### Courses
+## Courses
 
-#### [Introduction au langage Python pour l'analyse de données](http://titsitits.github.io/Python_Data_Science)
+### [Introduction au langage Python pour l'analyse de données](http://titsitits.github.io/Python_Data_Science)
 
 Ce cours, à la fois minimaliste et pratique, vous permettra :
 
@@ -41,7 +48,7 @@ Ce cours, à la fois minimaliste et pratique, vous permettra :
 
 Ce cours s'addresse donc principalement aux personnes désireuses de rapidement mettre le pied à l'étrier dans ce domaine passionnant, ou à toute personne dont l'activité professionnelle, liée de près ou de loin aux sciences des données, nécessite d'avoir un aperçu concret de ce domaine et de ce qu'il permet de faire.
 
-### Personal github repositories
+## Personal github repositories
 
 * [A selection of State-ot-the-art, Open-source, Usable, and Pythonic techniques for Image Restoration](https://github.com/titsitits/open-image-restoration)
 

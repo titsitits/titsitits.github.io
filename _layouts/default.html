@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!--mathjax-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% seo %}
   <style>
 {% include github_site.css %}
@@ -19,7 +22,8 @@
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
+    <div class="container-fuild">
+	<div class="jumbotron" style="background-image: url(https://cdn.pixabay.com/photo/2018/09/27/09/22/web-3706562_1280.jpg);">
         <header class="inner">
           {% if site.github.is_project_page %}
             <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
@@ -40,12 +44,21 @@
         </header>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
-    </div>
+    <!--- main content -->
+	<div class="container-fuild">
+	<div class="row">
+	<div class="col-sm-2">
+		<!--empty-->
+	</div>
+	<div class="col-sm-8">
+	{{ content }}
+	</div>
+	<div class="col-sm-2">
+		<!--empty-->
+	</div>
+	</div>
+	</div>
+
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">

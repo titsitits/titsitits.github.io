@@ -2,10 +2,15 @@
 page_title: Restauration d'image par réseaux de neurones profonds
 layout: default_with_toc
 heading: |
-    <h3 class="title">Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois</h3>
+    <h3 class="title2">Cas d'application : un ouvrage en hommage aux sportifs belges, nivellois</h3>
     <h4 class="centered">Mickaël Tits - CETIC - 05/11/2019</h4>
-    <h6 class="title">(ON-GOING WORK!)</h6>
+    <h6 class="title2">(ON-GOING WORK!)</h6>
+    <p class="fig">
+    <a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="width:200px;"></a>
+    </p>
 ---
+
+
 
 # Introduction
 
