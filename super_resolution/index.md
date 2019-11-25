@@ -8,7 +8,7 @@ heading: |
     <table border="0" style="width:300; margin-left:auto;margin-right:auto; border:none; border-collapse: collapse;">
     <tr style="border:none;">
     <td style="border:none;padding:0 15px 0 15px;"><a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="height:100px; width:auto;"></a></td>
-    <td style="border:none; padding:0 15px 0 15px;"><a href="https://www.enmieux.be"><img src="../assets/images/feder2.png" style="height:100px; width:auto;"></a></td>
+    <td style="border:none; padding:0 15px 0 15px;"><a href="https://www.enmieux.be/projet/digistorm-nouveaux-territoires-numeriques-industries-culturelles-et-creatives#node-9031"><img src="../assets/images/feder2.png" style="height:100px; width:auto;"></a></td>
     </tr>
     </table>
     </p>
