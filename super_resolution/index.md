@@ -28,7 +28,6 @@ Dans cet article, nous parlerons plus particulièrement d’un ensemble techniqu
 Un réseau de neurones profond est un algorithme qui permet de prédire une variable dépendante à partir de plusieurs variables prédictives. L’exemple le plus couramment utilisé pour expliquer cette notion de modèle prédictif est celui du prix des maisons. A partir d’un ensemble d’exemples de maisons (appelé jeu d’entraînement), dont on connaît le prix, ainsi que différentes variables telles que la surface, le nombre de pièces, l’âge, etc., on estime une fonction qui va caractériser le prix en fonction des autres variables connues:
 
 <p style="text-align:center;">$$prix = f(surface, age, ...)$$</p>
-
 L’architecture d’un réseau de neurones permet de définir une fonction plus ou moins complexe, avec des paramètres (les poids des liens entre les neurones) qui vont devoir être choisis de manière à estimer au mieux cette fonction. Ce choix des paramètres se fait de manière à ce que la fonction donne un résultat le plus proche possible du prix réel pour toutes les maisons du jeu d’entraînement. Ce processus est effectué par un processus d’optimisation, et plus particulièrement d’une minimisation de l’erreur des prédictions sur toutes les maisons du jeu d’entraînement (appelée fonction de coût) (c’est-à-dire une minimisation de l’écart entre leur prix réel et le prix prédit à partir de leur surface et de leur âge par la fonction estimée). Cette optimisation se base généralement sur l’algorithme de descente de gradient [[1]](#ftnt1). Cet algorithme permet de calculer la modification des paramètres (les poids des liens entre les neurones) qui va permettre de faire baisser le plus l’erreur de prédiction. Ce processus est appliqué de manière itérative par petits pas jusqu’à atteindre un minimum de l’erreur de prédiction sur toutes les maisons d’entraînement. En général, on teste ensuite la fonction obtenue (le réseau de neurone avec ses paramètres bien choisis) sur un nouvel ensemble de maisons qui n’ont pas été utilisées pour l’entraînement, pour vérifier si la fonction permet de réellement estimer le prix des maisons, et n’a pas juste retenu par coeur le prix des maisons du jeu d’entraînement. On parle de phase de test.
 
 <hr><p class="fig" id="fig1">
@@ -59,7 +58,6 @@ Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire u
 </p>
 
 <p style="text-align:center;">$$grande_image = f(petite_image)$$</p>
-
 
 Pour réaliser cette tâche, le jeu d’entraînement consiste donc en un ensemble de paires d’images identiques mais de résolutions différentes. Ce jeu peut être obtenu soit en prenant deux photos identiques avec deux appareils photos différents, ou plus simplement en diminuant artificiellement la taille d’une image pour en extraire une version de plus basse résolution.
 
