@@ -5,7 +5,12 @@ heading: |
     <h3 class="title2">Un notebook unique pour tester différents algorithmes de Deep Learning</h3>
     <h4 class="title2" id="no_toc"> <a href="https://www.cetic.be/Mickael-Tits?lang=fr">Mickaël Tits - CETIC asbl</a> - 03/07/2019</h4>
     <p class="fig">
-    <a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="width:200px;"></a>
+    <table border="0" style="width:300; margin-left:auto;margin-right:auto; border:none; border-collapse: collapse;">
+    <tr style="border:none;">
+    <td style="border:none;padding:0 15px 0 15px;"><a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="height:100px; width:auto;"></a></td>
+    <td style="border:none; padding:0 15px 0 15px;"><a href="https://www.enmieux.be"><img src="../assets/images/feder2.png" style="height:100px; width:auto;"></a></td>
+    </tr>
+    </table>
     </p>
     <p class="fig">
     <img src="https://titsitits.github.io/super_resolution/images/super_res.png" />
