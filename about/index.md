@@ -7,18 +7,18 @@ heading: |
     <table border="0" style="width:300; margin-left:auto;margin-right:auto; border:none; border-collapse: collapse;">
     <tr style="border:none;">
     <td style="border:none;padding:0 15px 0 15px;">
-	<h1 class="title1">Mickaël Tits</h1>
+    <h1 class="title1">Mickaël Tits</h1>
     <h4 class="title2">Senior Research Engineer</h4>
     <h5 class="title2">Data Science Department</h5>
     <p class="fig">
     <a href="https://www.cetic.be"><img src="../assets/images/cetic.png" style="width:200px;"></a>
     </p>
-	</td>
+    </td>
     <td style="border:none; padding:0 15px 0 15px;">
-	<p class="fig">
+    <p class="fig">
     <img src="https://www.cetic.be/local/cache-vignettes/L200xH300/auton129-cd908.jpg?1570543115" style="width:200px;" />
     </p>
-	</td>
+    </td>
     </tr>
     </table>
 ---
