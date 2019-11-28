@@ -22,6 +22,7 @@ heading: |
 <img class="fig" src="https://titsitits.github.io/super_resolution/images/super_res.png" /></a>
 </p>
 
+
 ### [Restauration d'image par réseaux de neurones profonds](http://titsitits.github.io/image_restoration)
 
 Dans le cadre du projet DigiMIR, projet FEDER mené en collaboration entre le [CETIC](https://cetic.be) et [Numediart](https://numediart.org/), nous avons testé et comparé différentes techniques de restauration d'image basées sur de l'intelligence artificielle, et plus particulièrement sur les réseaux de neurones profonds. Ces techniques, bien qu'encore imparfaites et en plein développement, ont un intérêt réel dans différents contextes nécessitant d'améliorer la qualité d'une image. Les applications peuvent aller de la vidéo-surveillance à l'histoire et l'art, en passant par l'imagerie médicale ou satellite. De manière générale, toute image de faible qualité peut bénéficier de techniques de restauration d'image, que ce soit dû à la détérioration d'un support par le temps, ou la qualité d'acquisition d'origine (capteur low-cost ou âgé, contraintes spécifiques à un canal d'acquisition, e.g. images infrarouges, satellites, IRM), ou encore la compression numérique.
