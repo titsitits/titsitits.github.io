@@ -1,6 +1,3 @@
 theme: jekyll-theme-slate
-title: |
-    <span class="centered">Mickaël Tits</span>
-    <br>
-    <span class="centered">Data Science Research Engineer @ CETIC</span>
+title: Mickaël Tits - Data Scientist @ CETIC
 markdown: kramdown
