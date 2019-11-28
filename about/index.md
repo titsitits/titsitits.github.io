@@ -16,7 +16,7 @@ heading: |
     </td>
     <td style="border:none; padding:0 15px 0 15px;">
     <p class="fig">
-    <img src="https://www.cetic.be/local/cache-vignettes/L200xH300/auton129-cd908.jpg?1570543115" style="width:200px;" />
+    <img src="https://www.cetic.be/local/cache-vignettes/L200xH300/auton129-cd908.jpg?1570543115" style="height:220px;" />
     </p>
     </td>
     </tr>
