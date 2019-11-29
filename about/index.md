@@ -72,3 +72,7 @@ Sixthly, and finally, to allow a practical use of the evaluation model, a feedba
 
 <a href="../assets/files/ThesisMickaelTits.pdf" class="btn btn-info" role="button">Download Thesis</a>
 
+# Contact
+
+Mail : mickaeltits (at) gmail (dot) com
+
