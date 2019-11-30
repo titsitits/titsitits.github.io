@@ -63,7 +63,6 @@ Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire u
 </p>
 
 <p style="text-align:center;">$$grande_image = f(petite_image)$$</p>
-
 Pour réaliser cette tâche, le jeu d’entraînement consiste donc en un ensemble de paires d’images identiques mais de résolutions différentes. Ce jeu peut être obtenu soit en prenant deux photos identiques avec deux appareils photos différents, ou plus simplement en diminuant artificiellement la taille d’une image pour en extraire une version de plus basse résolution.
 
 Afin d’entraîner un modèle (pour calculer et minimiser une fonction de coût), il existe des mesures permettant d’évaluer objectivement la qualité de reconstruction d’une image, en la comparant avec l’image originale. Les mesures habituellement utilisées sont le rapport signal à bruit (“Peak Signal-to-Noise Ratio” - PSNR) [[4]](#ftnt4), et la similarité structurelle (“Structural Similarity - SSIM) [[5]](#ftnt5).
@@ -95,7 +94,7 @@ Ainsi, de nombreux travaux se réclament supérieurs aux autres, sous couvert d�
 
 Dans cette jungle de méthodes et de mesures, il est difficile de se retrouver et de choisir la méthode qui convient le mieux aux images à traiter. C’est pourquoi le mieux est de tester par soi-même ces modèles et de les comparer sur ses propres images. Dans ce contexte, nous vous avons confectionné un tutoriel complet tenant dans un notebook unique sur Google Colab, et accessible sur le lien suivant:
 
-https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb
+<a href="https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb">https://colab.research.google.com/github/titsitits/Test_images_superresolution/blob/master/Super_resolution_comparison.ipynb</a>
 
 Google Colab est une plateforme gratuite permettant de faire tourner des algorithmes en python sur une machine hébergée chez Google, et surtout dotée d’une carte graphique (GPU) suffisamment puissance pour faire tourner des algorithmes de traitement d’image utilisant des modèles de Deep Learning (vous aurez en effet du mal à faire tourner ces programmes sur votre pc portable).
 
