@@ -44,18 +44,48 @@
         </header>
     </div>
 
-    <!--- main content -->
-	<div class="container-fuild">
+	<!-- blog headings (titles, heading part) -->
+	<div class="container-fluid">
+	
+		 <!--div class="jumbotron"-->
+			{% if page.page_title %}
+			<h1 class="title1">{{ page.page_title }}</h1>
+			{% endif %}	  
+			{% if page.subtitle %}
+			<h2 class="title2">{{ page.subtitle }}</h2>
+			{% endif %}	  
+			{% if page.subsubtitle %}
+			<h3 class="centered">{{ page.subsubtitle }}</h3>
+			{% endif %}	  
+			{% if page.subsubsubtitle %}
+			<h4 class="centered">{{ page.subsubsubtitle }}</h4>
+			{% endif %}
+			{% if page.heading %}	  
+			{{ page.heading }}	  
+			{% endif %}		 
+		 <!--/div-->
+
+
+
+    <!--- blog toc and main content -->
+
 	<div class="row">
-	<div class="col-sm-2">
-		<!--empty-->
-	</div>
-	<div class="col-sm-8">
-	{{ content }}
-	</div>
-	<div class="col-sm-2">
-		<!--empty-->
-	</div>
+
+		<div class="col-sm-3">
+		<!-- toc -->
+		<h1>Browse content</h1>
+		  {% include toc.html html=content ordered=true h_min=1 %}
+		</div>
+
+		<div class="col-sm-6">
+		<!-- main content -->
+		{{ content }}
+		</div>
+
+		<div class="col-sm-3">
+		  <!-- empty -->
+		</div>
+
 	</div>
 	</div>
 

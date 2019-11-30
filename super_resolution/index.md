@@ -1,5 +1,5 @@
 ---
-layout: default_with_toc
+layout: default
 heading: |
     <h1 class="title1">Super-résolution d’images par intelligence artificielle</h1>
     <h3 class="title2">Un notebook unique pour tester différents algorithmes de Deep Learning</h3>

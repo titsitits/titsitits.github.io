@@ -1,5 +1,5 @@
 ---
-layout: default_with_toc
+layout: default
 description: Welcome to my work
 heading: |
     <h1 class="title1">Mickaël Tits</h1>

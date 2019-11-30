@@ -1,7 +1,5 @@
 ---
-layout: default_with_toc
-heading: |
-layout: default_with_toc
+layout: default
 description: About me
 heading: |
     <div class="container-fluid">
