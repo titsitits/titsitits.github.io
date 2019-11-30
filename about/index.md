@@ -34,8 +34,6 @@ He then joined CETIC in October 2018 to strengthen the data analysis team. His i
 
 <a href="../assets/files/CV-Mickael-Tits-En-2019.pdf" class="btn btn-info" role="button">Download CV</a>
 
-## Some links
-
 <!--
 <a href="https://github.com/titsitits" class="btn btn-info" role="button">My github</a>
 <a href="https://scholar.google.be/citations?user=FUFY6bYAAAAJ&hl=fr" class="btn btn-info" role="button">Google Scholar</a>
@@ -49,9 +47,7 @@ He then joined CETIC in October 2018 to strengthen the data analysis team. His i
 <a href="http://dblp.uni-trier.de/pers/hd/t/Tits:Micka=euml=l" target="_blank"><img src="../assets/logos/dblp.png" alt="DBLP profile" title="DBLP profile" style="vertical-align: middle; width:auto; height:auto;" border=0></a>
 <a href="https://be.linkedin.com/in/micka%C3%ABl-tits-28144269" target="_blank"><img src="../assets/logos/linkedin.png" alt="LinkedIn profile" title="LinkedIn profile" style="vertical-align: middle; width:auto; height:auto;" border=0></a>
 
-## Contact
-
-Mail : mickaeltits (at) gmail (dot) com
+Contact: mickaeltits (at) gmail (dot) com
 
 # Thesis
 
