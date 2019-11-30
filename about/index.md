@@ -41,11 +41,13 @@ He then joined CETIC in October 2018 to strengthen the data analysis team. His i
 <a href="https://www.researchgate.net/profile/Mickael_Tits" class="btn btn-info" role="button">ResearchGate</a>
 -->
 
-<a href="https://www.researchgate.net/profile/Mickael_Tits" target="_blank"><img src="../assets/logos/rg.png" alt="ResearchGate profile" title="ResearchGate profile" style="vertical-align: middle; width:auto; height:auto;" border=0/></a>
-<a href="https://scholar.google.be/citations?user=FUFY6bYAAAAJ&hl=fr&oi=ao" target="_blank"><img src="../assets/logos/scholar.png" alt="Google Scholar profile" title="Google Scholar profile" style="vertical-align: middle; width:auto; height:auto;" border=0/></a>
-<a href="https://github.com/titsitits" target="_blank"><img src="../assets/logos/github.png" alt="GitHub profile" title="GitHub profile" style="vertical-align: middle; width:auto; height:auto;" border=0/></a>
-<a href="http://dblp.uni-trier.de/pers/hd/t/Tits:Micka=euml=l" target="_blank"><img src="../assets/logos/dblp.png" alt="DBLP profile" title="DBLP profile" style="vertical-align: middle; width:auto; height:auto;" border=0/></a>
-<a href="https://be.linkedin.com/in/micka%C3%ABl-tits-28144269" target="_blank"><img src="../assets/logos/linkedin.png" alt="LinkedIn profile" title="LinkedIn profile" style="vertical-align: middle; width:auto; height:auto;" border=0/></a>
+<a href="https://www.researchgate.net/profile/Mickael_Tits" target="_blank">
+<img src="../assets/logos/rg.png" alt="ResearchGate profile" title="ResearchGate profile" style="vertical-align: middle; width:auto; height:auto;"/>
+</a>
+<a href="https://scholar.google.be/citations?user=FUFY6bYAAAAJ&hl=fr&oi=ao" target="_blank"><img src="../assets/logos/scholar.png" alt="Google Scholar profile" title="Google Scholar profile" style="vertical-align: middle; width:auto; height:auto;"/></a>
+<a href="https://github.com/titsitits" target="_blank"><img src="../assets/logos/github.png" alt="GitHub profile" title="GitHub profile" style="vertical-align: middle; width:auto; height:auto;"/></a>
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tits:Micka=euml=l" target="_blank"><img src="../assets/logos/dblp.png" alt="DBLP profile" title="DBLP profile" style="vertical-align: middle; width:auto; height:auto;"/></a>
+<a href="https://be.linkedin.com/in/micka%C3%ABl-tits-28144269" target="_blank"><img src="../assets/logos/linkedin.png" alt="LinkedIn profile" title="LinkedIn profile" style="vertical-align: middle; width:auto; height:auto;"/></a>
 
 Contact: mickaeltits (at) gmail (dot) com
 
