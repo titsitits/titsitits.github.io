@@ -25,27 +25,41 @@ heading: |
 ---
 
 
-# About me
+# About
 
 Dr Mickaël Tits is senior research engineer at <a href="https://www.cetic.be">CETIC</a> since 2018.
-He completed a Master’s degree in Civil Engineering specialized in Telecommunications and Multimedia at the University of Mons (UMONS 2014), and completed his graduation work at McGill University in Montreal. He then pursued a doctoral thesis at the University of Mons within the institute Numediart, on the automatic evaluation of gesture expertise by motion capture and machine learning (UMONS 2018). He was also able to participate in the development of the MotionMachine framework, allowing the manipulation, interactive visualization and data analysis of Motion Capture.
+He completed a Master’s degree in Civil Engineering specialized in Telecommunications and Multimedia at the University of Mons (UMONS 2014), and completed his graduation work at McGill University in Montreal. He then pursued a doctoral thesis at the University of Mons within the <a href="https://numediart.org">Numediart</a> institute, on the automatic evaluation of gesture expertise by motion capture and machine learning (UMONS 2018). He also participated in the development of the <a href="https://github.com/numediart/ofxMotionMachine">MotionMachine</a> framework, allowing the manipulation, interactive visualization and data analysis of Motion Capture.
 He then joined CETIC in October 2018 to strengthen the data analysis team. His interests are in artificial intelligence, and its application in many areas such as health and industry.
 
 
 <a href="../assets/files/CV-Mickael-Tits-En-2019.pdf" class="btn btn-info" role="button">Download CV</a>
 
-# Some links
+## Some links
 
+<!--
 <a href="https://github.com/titsitits" class="btn btn-info" role="button">My github</a>
 <a href="https://scholar.google.be/citations?user=FUFY6bYAAAAJ&hl=fr" class="btn btn-info" role="button">Google Scholar</a>
 <a href="https://be.linkedin.com/in/micka%C3%ABl-tits-28144269" class="btn btn-info" role="button">Linkedin</a>
 <a href="https://www.researchgate.net/profile/Mickael_Tits" class="btn btn-info" role="button">ResearchGate</a>
-<a href="https://www.researchgate.net/profile/Mickael_Tits" class="btn btn-info" role="button">ResearchGate</a>
+-->
+
+<a href="https://www.researchgate.net/profile/Mickael_Tits" target="_blank"><img src="./logos/rg.png" alt="ResearchGate profile" title="ResearchGate profile" style="vertical-align: middle; width:auto; height:auto;" border=0></a>
+<a href="https://scholar.google.be/citations?user=FUFY6bYAAAAJ&hl=fr&oi=ao" target="_blank"><img src="./logos/scholar.png" alt="Google Scholar profile" title="Google Scholar profile" style="vertical-align: middle; width:auto; height:auto;" border=0></a>
+<a href="https://github.com/titsitits" target="_blank"><img src="./logos/github.png" alt="GitHub profile" title="GitHub profile" style="vertical-align: middle; width:auto; height:auto;" border=0></a>
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tits:Micka=euml=l" target="_blank"><img src="./logos/dblp.png" alt="DBLP profile" title="DBLP profile" style="vertical-align: middle; width:auto; height:auto;" border=0></a>
+<a href="https://be.linkedin.com/in/micka%C3%ABl-tits-28144269" target="_blank"><img src="./logos/linkedin.png" alt="LinkedIn profile" title="LinkedIn profile" style="vertical-align: middle; width:auto; height:auto;" border=0></a>
+
+## Contact
+
+Mail : mickaeltits (at) gmail (dot) com
 
 # Thesis
 
-* Title: Expert Gesture Analysis through Motion Capture using Statistical Modeling and Machine Learning
-* Supervisor: Prof. Thierry Dutoit
+<div class="jumbotron">
+<h4 id="no_toc">Title: Expert Gesture Analysis through Motion Capture using Statistical Modeling and Machine Learning</h4>
+<h4 id="no_toc">Supervisor: Prof. Thierry Dutoit</h4>
+<a href="../assets/files/ThesisMickaelTits.pdf" class="btn btn-info" role="button">Download Thesis</a>
+</div>
 
 ## Abstract
 The present thesis is a contribution to the field of human motion analysis. It studies the possibilities for a computer to interpret human gestures, and more specifically to evaluate the quality of expert gestures. These gestures are generally learned through an empirical process, limited to the subjectivity and own perception of the teacher. In order to objectify the evaluation of the quality of these gestures, researchers have proposed various measurable criteria. However, these measurements are still generally based on human observation. 
@@ -68,9 +82,8 @@ Additionally, a first exploration of the use of deep learning for gesture evalua
 
 Sixthly, and finally, to allow a practical use of the evaluation model, a feedback system must provide an intuitive interpretation of the predicted level, allowing an effective understanding and assimilation by the user of the system. In the present work, an original and generic feedback system is proposed, based on the synthesis of an improved gesture, and its comparison to the user's original gesture. Both intuitive and precise feedback are proposed, based on (i) synchronized visualization of both gestures, and (ii) striped images highlighting the motion features that need improvement. As a validation of the proposed method, examples of feedback are proposed for various sequences of the Taijiquan MoCap dataset, showing its practical interest for objective and automated supervision.
 
-<a href="../assets/files/ThesisMickaelTits.pdf" class="btn btn-info" role="button">Download Thesis</a>
+## Overview
+<img src="./introduction.png"/>
 
-# Contact
 
-Mail : mickaeltits (at) gmail (dot) com
 
