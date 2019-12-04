@@ -80,7 +80,9 @@ Additionally, a first exploration of the use of deep learning for gesture evalua
 Sixthly, and finally, to allow a practical use of the evaluation model, a feedback system must provide an intuitive interpretation of the predicted level, allowing an effective understanding and assimilation by the user of the system. In the present work, an original and generic feedback system is proposed, based on the synthesis of an improved gesture, and its comparison to the user's original gesture. Both intuitive and precise feedback are proposed, based on (i) synchronized visualization of both gestures, and (ii) striped images highlighting the motion features that need improvement. As a validation of the proposed method, examples of feedback are proposed for various sequences of the Taijiquan MoCap dataset, showing its practical interest for objective and automated supervision.
 
 ## Overview
+<p class="fig">
 <img src="./introduction.png"/>
+</p>
 
 
 
