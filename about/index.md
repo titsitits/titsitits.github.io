@@ -65,6 +65,8 @@ This Technological Innovation Partnership aims at building the first version of 
 
 Development of a research project in the field of cultural and creative industries and the automatic recognition of multimedia flows, with the aim of bridging these technologies with issues related to the Internet of the future.
 
+In this context, an open-source framework for image restoration is currently in active development, and available at: [github.com/titsitits/open-image-restoration](https://github.com/titsitits/open-image-restoration)
+
 ## [Wal-e-Cities/LIV](https://www.cetic.be/WAL-E-CITIES-LIV-3294)
 
 The "Wal-e-Cities" project portfolio aims to meet the challenges of Walloon cities, in a "Smart Region" philosophy. The main purpose of this portfolio is to develop devices and software that will deliver services and meet needs in four areas: mobility; energy and environment; transparent data exchange market; living environment and well-being of the citizen. Non-technological components will be integrated in order to use the technology wisely and compare the results to the concrete needs of users (citizens, municipal authorities, local businesses, etc.).
