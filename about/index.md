@@ -53,7 +53,7 @@ Contact: mickaeltits AT gmail.com
 # CV
 
 <embed src="../assets/files/CV-Mickael-Tits-En-2019.pdf" style="width:100%;" height="600" type="application/pdf">
-<a href="../assets/files/CV-Mickael-Tits-En-2019.pdf" class="btn btn-info" role="button">Download CV</a>
+<!--a href="../assets/files/CV-Mickael-Tits-En-2019.pdf" class="btn btn-info" role="button">Download CV</a-->
 
 # Recent projects
 
@@ -110,5 +110,7 @@ Sixthly, and finally, to allow a practical use of the evaluation model, a feedba
 <img src="./introduction.png"/>
 </p>
 
+## Content
 
+<embed src="../assets/files/ThesisMickaelTits.pdf" style="width:100%;" height="700" type="application/pdf">
 
