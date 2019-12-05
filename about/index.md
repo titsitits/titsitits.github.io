@@ -32,7 +32,6 @@ He completed a Master’s degree in Civil Engineering specialized in Telecommuni
 He then joined CETIC in October 2018 to strengthen the data analysis team. His interests are in artificial intelligence, and its application in many areas such as health and industry.
 
 
-<a href="../assets/files/CV-Mickael-Tits-En-2019.pdf" class="btn btn-info" role="button">Download CV</a>
 
 <!--
 <a href="https://github.com/titsitits" class="btn btn-info" role="button">My github</a>
@@ -49,7 +48,32 @@ He then joined CETIC in October 2018 to strengthen the data analysis team. His i
 <a href="http://dblp.uni-trier.de/pers/hd/t/Tits:Micka=euml=l" target="_blank"><img src="../assets/logos/dblp.png" alt="DBLP profile" title="DBLP profile" style="vertical-align: middle; width:auto; height:auto;"/></a>
 <a href="https://be.linkedin.com/in/micka%C3%ABl-tits-28144269" target="_blank"><img src="../assets/logos/linkedin.png" alt="LinkedIn profile" title="LinkedIn profile" style="vertical-align: middle; width:auto; height:auto;"/></a>
 
-Contact: mickaeltits (at) gmail (dot) com
+Contact: mickaeltits AT gmail.com
+
+# CV
+
+<embed src="../assets/files/CV-Mickael-Tits-En-2019.pdf" style="width:100%;" height="600" type="application/pdf">
+<a href="../assets/files/CV-Mickael-Tits-En-2019.pdf" class="btn btn-info" role="button">Download CV</a>
+
+# Recent projects
+
+## [Technological Innovation Partnership "Big Data Platform"](https://www.cetic.be/Big-Data-Platform)
+
+This Technological Innovation Partnership aims at building the first version of the Big Data service catalog (infrastructure and software) which will be made available through the Platform of Innovation (PFI).
+
+## [DigiMIR](https://www.cetic.be/DigiMIR-2790)
+
+Development of a research project in the field of cultural and creative industries and the automatic recognition of multimedia flows, with the aim of bridging these technologies with issues related to the Internet of the future.
+
+## [Wal-e-Cities/LIV](https://www.cetic.be/WAL-E-CITIES-LIV-3294)
+
+The "Wal-e-Cities" project portfolio aims to meet the challenges of Walloon cities, in a "Smart Region" philosophy. The main purpose of this portfolio is to develop devices and software that will deliver services and meet needs in four areas: mobility; energy and environment; transparent data exchange market; living environment and well-being of the citizen. Non-technological components will be integrated in order to use the technology wisely and compare the results to the concrete needs of users (citizens, municipal authorities, local businesses, etc.).
+
+## [University of Namur - Data Analytics course](https://directory.unamur.be/staff/titsm/courses)
+
+Designed a course for preparing bachelor students in Business Engineering to the brand new [Master in Data Science at University of Namur](https://www.unamur.be/etudes/master/catalogue/data-science).
+The course is fully in French, and open-source, available at: [www.mickaeltits.be/Python_Data_Science](http://www.mickaeltits.be/Python_Data_Science)
+
 
 # Thesis
 
