@@ -57,11 +57,6 @@ Figure 2. Extrait des experts à Miami (vidéo <a href="https://www.youtube.com/
 
 Dans ce contexte (i.e. la super-résolution d’image), le but est de prédire une image de meilleure qualité (plus réaliste, et ayant plus de pixels) à partir d’une image d’entrée plus petite (voir [Figure 2](#fig2)) :
 
-
-<p style="text-align:center;">
-<img src="https://titsitits.github.io/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image2.png" style="width:250px;" />
-</p>
-
 <p style="text-align:center;">$$grande_image = f(petite_image)$$</p>
 Pour réaliser cette tâche, le jeu d’entraînement consiste donc en un ensemble de paires d’images identiques mais de résolutions différentes. Ce jeu peut être obtenu soit en prenant deux photos identiques avec deux appareils photos différents, ou plus simplement en diminuant artificiellement la taille d’une image pour en extraire une version de plus basse résolution.
 
