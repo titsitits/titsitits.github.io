@@ -118,7 +118,7 @@ Outre les contraintes dus aux outils et à la variabilité des performances, la 
 
 ## Un domaine en pleine expansion
 
-L'utilisation des réseaux de neurones profonds dans la recherche, et en particulier dans le traitement d'images est actuellement un champ de recherche particulièrement en mouvement. L'état de l'art évolue rapidement. A titre d'exemple, lors de la phase de ce projet portant sur la comparaison d'algorithmes de super-résolution (voir [ici](https://titsitits.github.io/super_resolution/)), l'algorithme [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks (ECCV, 2018)](https://paperswithcode.com/paper/esrgan-enhanced-super-resolution-generative) était premier dans la plupart des classements. Ses performances semblent néanmoins avoir été surpassées depuis, par une autre algorithme: [Second-Order Attention Network for Single Image Super-Resolution (CVPR 2019)](https://paperswithcode.com/paper/second-order-attention-network-for-single). Cependant, ce dernier n'a a l'heure actuelle aucune licence spécifiée (son utilisation n'est donc par officiellement libre de droit).
+L'utilisation des réseaux de neurones profonds dans la recherche, et en particulier dans le traitement d'images est actuellement un champ de recherche particulièrement en mouvement. L'état de l'art évolue rapidement. A titre d'exemple, lors de la phase de ce projet portant sur la comparaison d'algorithmes de super-résolution (voir [ici](https://titsitits.github.io/super_resolution/)), l'algorithme [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks (ECCV, 2018)](https://paperswithcode.com/paper/esrgan-enhanced-super-resolution-generative) était premier dans la plupart des classements. Ses performances semblent néanmoins avoir été surpassées depuis, par une autre algorithme: [Second-Order Attention Network for Single Image Super-Resolution (CVPR 2019)](https://paperswithcode.com/paper/second-order-attention-network-for-single). Cependant, ce dernier n'a a l'heure actuelle aucune licence spécifiée (son utilisation n'est donc pas officiellement libre de droit).
 
 # Une sélection d'algorithmes libres de droits, utilisables, et compatibles
 
@@ -248,3 +248,16 @@ En outre, DeOldify a également l'avantage d'être configurable: un facteur de r
 
 ## Super-résolution
 
+La super-résolution permet également d'inférer de l'information supplémentaire à partir de l'image d'origine. Dans ce cas-ci, ce ne sont pas des couleurs qui sont inventées, mais bien des pixels, permettant d'augmenter artificiellement la taille, et a fortiori les détails d'une image.
+
+Nous avons déjà présenté une comparaison de différents algorithmes de super-résolution dans un [autre article de blog]( http://www.mickaeltits.be/super_resolution/ ). Nous y avons en effet comparé six algorithmes différents, et avons finalement sélectionné l'algorithme [ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks (ECCV, 2018)](https://paperswithcode.com/paper/esrgan-enhanced-super-resolution-generative), qui obtenait à l'époque (juin 2019) la première place dans plusieurs classements ([Figure 11](#fig11)): 
+
+<hr>
+<p class="fig" id="fig11">
+<img class="fig" src="http://www.mickaeltits.be/open-image-restoration/White%20paper%20-%20super-resolution%20(french)/Whitepapersuperresolution_fichiers/image7.png"/>
+<br>
+Figure 11 - Etat de l’art de la super-résolution d'images, recensé sur paperswithcode.com. SRGAN + Residual-in-Rseidual Dense Block (ESRGAN) se retrouvait à la première place sur la plupart des benchmarks (juin 2019). 
+</p>
+<hr>
+
+Comme expliqué dans l'article de blog susmentionné, les performances de ces algorithmes sont prometteuses, mais instables. Autrement dit, les détails générés par ces techniques sont parfois peu réalistes.
